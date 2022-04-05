@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Dashboard</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+	<link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400;1,500&family=Open+Sans:wght@500;600;700&family=Poppins:wght@200;300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light bd-bt py-0">
+		<a class="navbar-brand d-flex" href="#"><i class="fas fa-bars" id="mbso" onclick="openNav()"></i><i class="far fa-cloud-upload-alt text-primary ml-3 mr-4"></i><div class="f-12">nclouds JIRA</div></a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto">
+
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle f-12 text-dark mt-2" href="#"data-toggle="dropdown">
+						Your Work
+					</a>
+					<div class="dropdown-menu">
+						<a class="dropdown-item" href="#">Work 1</a>
+						<a class="dropdown-item" href="#">Work 2</a>
+						<a class="dropdown-item" href="#">Work 3</a>
+					</div>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle f-12 text-dark mt-2" href="#"data-toggle="dropdown">
+						Projects
+					</a>
+					<div class="dropdown-menu">
+						<div class="dropdown-menu-coloums d-flex">
+							<div class="dropdown-menu-column">
+								<a class="dropdown-item" href="#">Project 1</a>
+								<a class="dropdown-item" href="#">Project 2</a>
+								<a class="dropdown-item" href="#">Project 3</a>
+							</div>
+							<div class="dropdown-menu-column">
+								<a class="dropdown-item" href="#">Project 4</a>
+								<a class="dropdown-item" href="#">Project 5</a>
+								<a class="dropdown-item" href="#">Project 6</a>
+							</div>
+							<div class="dropdown-menu-column">
+								<a class="dropdown-item" href="#">Project 7</a>
+								<a class="dropdown-item" href="#">Project 8</a>
+								<a class="dropdown-item" href="#">Project 9</a>
+							</div>
+						</div>
+						
+					</div>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle f-12 text-dark mt-2" href="#"data-toggle="dropdown">
+						Filters
+					</a>
+					<div class="dropdown-menu">
+						<a class="dropdown-item" href="#">Filter 1</a>
+						<a class="dropdown-item" href="#">Filter 2</a>
+						<a class="dropdown-item" href="#">Filter 3</a>
+					</div>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle f-12 text-dark mt-2" href="#"data-toggle="dropdown">
+						Dashboards
+					</a>
+					<div class="dropdown-menu">
+						<a class="dropdown-item" href="#">Dashboard 1</a>
+						<a class="dropdown-item" href="#">Dashboard 2</a>
+						<a class="dropdown-item" href="#">Dashboard 3</a>
+					</div>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle f-12 text-dark mt-2" href="#"data-toggle="dropdown">
+						People
+					</a>
+					<div class="dropdown-menu">
+						<a class="dropdown-item" href="#">People 1</a>
+						<a class="dropdown-item" href="#">People 2</a>
+						<a class="dropdown-item" href="#">People 3</a>
+					</div>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link"><button class="btn bg-dark text-white">Create</button></a>
+				</li>
+			</ul>
+			<form class="form-inline my-2 my-lg-0">
+				<input class="same form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+			</form>
+			<div class="p-r mt-lg-0 mt-3 d-flex align-items-center">
+				<i class="fas fa-bell rotat"></i>
+				<span class="badge badge-danger sett">9</span>
+				<i class="mx-3 fas fa-question-circle"></i>
+				<i class="fal fa-cog mr-3"></i>
+				<div class="bg-yellow">QS</div>
+			</div>
+		</div>
+	</nav>
+	<div id="mySidenav" class="sidebar bg-light bd-right float-left">
+		<a href="javascript:void(0)" class="float-right mr-4 closebtn text-dark" onclick="closeNav()">&times;</a>
+		<div class="text-muted mt-3 mx-3"><small>MENU</small></div>
+		<ul class="mt-3 mx-3">
+			<li class="mb-2 p-2">
+				<a href="dashboard.html"><i class="fas fa-columns mr-3"></i><span>Dashboard</span></a>
+			</li>
+			<li class="mb-2 p-2 active">
+				<a href="calender.html"><i class="fas fa-calendar-alt mr-3"></i><span>Calender</span></a>
+			</li>
+			<li class="mb-2 p-2">
+				<a href="chat.html"><i class="far fa-comment mr-3"></i><span>Chat</span></a>
+			</li>
+			<li class="mb-2 p-2">
+				<i class="fas fa-cash-register mr-3"></i><span>Ecommerce</span>
+			</li>
+			<li class="mb-2 p-2">
+				<i class="fas fa-envelope mr-3"></i><span>Email</span>
+			</li>
+			<li class="mb-2 p-2">
+				<i class="fas fa-hashtag mr-3"></i><span>Kanban</span>
+			</li>
+			<div class="text-muted mt-3 mx-3"><small>PAGES</small></div>
+
+			<li class="mb-2 p-2 press">
+				<i class="fas fa-user mr-3"></i><span>Authentication</span><i class="fas fa-caret-down float-right"></i>
+			</li>
+			<ul class=" sub bg-white rounded open" style="display: none;">
+				<li class="py-1 pl-5"><a href="login.html">Login</a></li>
+				<li class="py-1 pl-5"><a href="register.html">Register</a></li>
+				<li class="py-1 pl-5"><a href="recover.html">Recover Password</a></li>
+				<li class="py-1 pl-5"><a href="lock.html">Lock Screen</a></li>
+			</ul>
+			<li class="mb-2 p-2 hidden">
+				<i class="fas fa-table mr-3"></i><span class="mr-5">Tabels</span><span class="ml-3"><i class="fas fa-caret-down ml-5"></i></span>
+			</li>
+			<ul class="showed sub bg-white rounded" style="display: none;">
+				<li class="py-1 pl-5 "><a href="table.html">Basic Table</a></li>
+				<li class="py-1 pl-5"><a href="data.html">Data Table</a></li>
+				<li class="py-1 pl-5"><a href="responsive.html">Responsive Table</a></li>
+				<li class="py-1 pl-5"><a href="edit.html">Editable Table</a></li>
+			</ul>
+			<li class="mb-2 p-2 ok">
+				<i class="far fa-map-marker-alt mr-3"></i><span class="">Maps</span><i class="fas fa-caret-down float-right"></i>
+			</li>
+			<ul class="shed sub bg-white rounded" style="display: none;">
+				<li class="py-1 pl-5"><a href="google.html">Google Map</a></li>
+				<li class="py-1 pl-5"><a href="vector.html">Vector Map</a></li>
+			</ul>
+		</ul>
+	</div>
+	<div class="container-fluid px-0">
+		<div class="row">
+			<div class="col-md-12 bg-grey pb-3 px-3">
+				<div class="p-5">
+					<h2 class="mb-4">Full Calendar</h2>
+					<div class="card">
+						<div class="card-body p-0">
+							<div id="calendar"></div>
+						</div>
+					</div>
+				</div>
+
+				<!-- calendar modal -->
+				<div id="modal-view-event" class="modal modal-top fade calendar-modal">
+					<div class="modal-dialog modal-dialog-centered">
+						<div class="modal-content">
+							<div class="modal-body">
+								<h4 class="modal-title"><span class="event-icon"></span><span class="event-title"></span></h4>
+								<div class="event-body"></div>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div id="modal-view-event-add" class="modal modal-top fade calendar-modal">
+					<div class="modal-dialog modal-dialog-centered">
+						<div class="modal-content">
+							<form id="add-event">
+								<div class="modal-body">
+									<h4>Add Event Detail</h4>        
+									<div class="form-group">
+										<label>Event name</label>
+										<input type="text" class="form-control" name="ename">
+									</div>
+									<div class="form-group">
+										<label>Event Date</label>
+										<input type='text' class="datetimepicker form-control" name="edate">
+									</div>        
+									<div class="form-group">
+										<label>Event Description</label>
+										<textarea class="form-control" name="edesc"></textarea>
+									</div>
+									<div class="form-group">
+										<label>Event Color</label>
+										<select class="form-control" name="ecolor">
+											<option value="fc-bg-default">fc-bg-default</option>
+											<option value="fc-bg-blue">fc-bg-blue</option>
+											<option value="fc-bg-lightgreen">fc-bg-lightgreen</option>
+											<option value="fc-bg-pinkred">fc-bg-pinkred</option>
+											<option value="fc-bg-deepskyblue">fc-bg-deepskyblue</option>
+										</select>
+									</div>
+									<div class="form-group">
+										<label>Event Icon</label>
+										<select class="form-control" name="eicon">
+											<option value="circle">circle</option>
+											<option value="cog">cog</option>
+											<option value="group">group</option>
+											<option value="suitcase">suitcase</option>
+											<option value="calendar">calendar</option>
+										</select>
+									</div>        
+								</div>
+								<div class="modal-footer">
+									<button type="submit" class="btn btn-primary" >Save</button>
+									<button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>        
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="related-product">
+					<div class="container">
+						<h1 class="text-center mb-5">Bootstrap 4 Admin Panel</h1>
+						<ul class="row justify-content-center">
+							<li class="col-md-6 col-sm-12">
+								<a href="https://github.com/dropways/deskapp">
+									<div class="related-box">
+										<img src="https://dropways.github.io/feathericons/assets/themes/twitter/images/deskapp.png" alt="deskapp">
+									</div>
+									<h3>DeskApp Bootstrap 4 admin template</h3>
+									<p>DeskApp Admin is a free to use Bootstrap 4 admin template. This template uses the default Bootstrap 4 styles along with a variety of powerful jQuery plugins and tools to create a powerful framework for creating admin panels or back-end dashboards.</p>
+								</a>
+								<div class="text-center">
+									<a href="https://github.com/dropways/deskapp" target="_blank" class="btn btn-primary btn-lg download-btn"><i class="fa fa-github"></i> Download Now</a>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$(".hidden").click(function(){
+				$(".showed").toggle();
+			});
+		});
+		$(document).ready(function(){
+			$(".press").click(function(){
+				$(".open").toggle();
+			});
+		});
+		$(document).ready(function(){
+			$(".ok").click(function(){
+				$(".shed").toggle();
+			});
+		});
+	</script>
+	<script>
+		function openNav() {
+			document.getElementById("mySidenav").style.width = "250px";
+			document.getElementById("mySidenav").style.marginTop = "0px";
+
+		}
+
+		function closeNav() {
+			document.getElementById("mySidenav").style.width = "0";
+		}
+	</script>
+	<script type="text/javascript">
+		jQuery(document).ready(function(){
+			jQuery('.datetimepicker').datepicker({
+				timepicker: true,
+				language: 'en',
+				range: true,
+				multipleDates: true,
+				multipleDatesSeparator: " - "
+			});
+			jQuery("#add-event").submit(function(){
+				alert("Submitted");
+				var values = {};
+				$.each($('#add-event').serializeArray(), function(i, field) {
+					values[field.name] = field.value;
+				});
+				console.log(
+					values
+					);
+			});
+		});
+
+		(function () {    
+			'use strict';
+    // ------------------------------------------------------- //
+    // Calendar
+    // ------------------------------------------------------ //
+    jQuery(function() {
+		// page is ready
+		jQuery('#calendar').fullCalendar({
+			themeSystem: 'bootstrap4',
+			// emphasizes business hours
+			businessHours: false,
+			defaultView: 'month',
+			// event dragging & resizing
+			editable: true,
+			// header
+			header: {
+				left: 'title',
+				center: 'month,agendaWeek,agendaDay',
+				right: 'today prev,next'
+			},
+			events: [
+			{
+				title: 'Barber',
+				description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eu pellentesque nibh. In nisl nulla, convallis ac nulla eget, pellentesque pellentesque magna.',
+				start: '2019-07-07',
+				end: '2019-07-07',
+				className: 'fc-bg-default',
+				icon : "circle"
+			},
+			{
+				title: 'Flight Paris',
+				description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eu pellentesque nibh. In nisl nulla, convallis ac nulla eget, pellentesque pellentesque magna.',
+				start: '2019-08-08T14:00:00',
+				end: '2019-08-08T20:00:00',
+				className: 'fc-bg-deepskyblue',
+				icon : "cog",
+				allDay: false
+			},
+			{
+				title: 'Team Meeting',
+				description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eu pellentesque nibh. In nisl nulla, convallis ac nulla eget, pellentesque pellentesque magna.',
+				start: '2019-07-10T13:00:00',
+				end: '2019-07-10T16:00:00',
+				className: 'fc-bg-pinkred',
+				icon : "group",
+				allDay: false
+			},
+			{
+				title: 'Meeting',
+				description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eu pellentesque nibh. In nisl nulla, convallis ac nulla eget, pellentesque pellentesque magna.',
+				start: '2019-08-12',
+				className: 'fc-bg-lightgreen',
+				icon : "suitcase"
+			},
+			{
+				title: 'Conference',
+				description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eu pellentesque nibh. In nisl nulla, convallis ac nulla eget, pellentesque pellentesque magna.',
+				start: '2019-08-13',
+				end: '2019-08-15',
+				className: 'fc-bg-blue',
+				icon : "calendar"
+			},
+			{
+				title: 'Baby Shower',
+				description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eu pellentesque nibh. In nisl nulla, convallis ac nulla eget, pellentesque pellentesque magna.',
+				start: '2019-08-13',
+				end: '2019-08-14',
+				className: 'fc-bg-default',
+				icon : "child"
+			},
+			{
+				title: 'Birthday',
+				description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eu pellentesque nibh. In nisl nulla, convallis ac nulla eget, pellentesque pellentesque magna.',
+				start: '2019-09-13',
+				end: '2019-09-14',
+				className: 'fc-bg-default',
+				icon : "birthday-cake"
+			},
+			{
+				title: 'Restaurant',
+				description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eu pellentesque nibh. In nisl nulla, convallis ac nulla eget, pellentesque pellentesque magna.',
+				start: '2019-10-15T09:30:00',
+				end: '2019-10-15T11:45:00',
+				className: 'fc-bg-default',
+				icon : "glass",
+				allDay: false
+			},
+			{
+				title: 'Dinner',
+				description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eu pellentesque nibh. In nisl nulla, convallis ac nulla eget, pellentesque pellentesque magna.',
+				start: '2019-11-15T20:00:00',
+				end: '2019-11-15T22:30:00',
+				className: 'fc-bg-default',
+				icon : "cutlery",
+				allDay: false
+			},
+			{
+				title: 'Shooting',
+				description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eu pellentesque nibh. In nisl nulla, convallis ac nulla eget, pellentesque pellentesque magna.',
+				start: '2019-08-25',
+				end: '2019-08-25',
+				className: 'fc-bg-blue',
+				icon : "camera"
+			},
+			{
+				title: 'Go Space :)',
+				description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eu pellentesque nibh. In nisl nulla, convallis ac nulla eget, pellentesque pellentesque magna.',
+				start: '2019-12-27',
+				end: '2019-12-27',
+				className: 'fc-bg-default',
+				icon : "rocket"
+			},
+			{
+				title: 'Dentist',
+				description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eu pellentesque nibh. In nisl nulla, convallis ac nulla eget, pellentesque pellentesque magna.',
+				start: '2019-12-29T11:30:00',
+				end: '2019-12-29T012:30:00',
+				className: 'fc-bg-blue',
+				icon : "medkit",
+				allDay: false
+			}
+			],
+			eventRender: function(event, element) {
+				if(event.icon){
+					element.find(".fc-title").prepend("<i class='fa fa-"+event.icon+"'></i>");
+				}
+			},
+			dayClick: function() {
+				jQuery('#modal-view-event-add').modal();
+			},
+			eventClick: function(event, jsEvent, view) {
+				jQuery('.event-icon').html("<i class='fa fa-"+event.icon+"'></i>");
+				jQuery('.event-title').html(event.title);
+				jQuery('.event-body').html(event.description);
+				jQuery('.eventUrl').attr('href',event.url);
+				jQuery('#modal-view-event').modal();
+			},
+		})
+});
+
+})(jQuery);
+</script>ipt
+</body>
+</html>
