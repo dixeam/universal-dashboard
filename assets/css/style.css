@@ -1,6 +1,9 @@
 body,p,a,ul li,span,h4,h5{
 	font-family:-apple-system, BlinkMacSystemFont, "San Francisco", "Segoe UI", Roboto, "Helvetica Neue", sans-serif;!important;
 }
+.h-90{
+	height: 90px !important;
+}
 .bd-bt{
 	border-bottom: 1px solid #F1F2F4;
 }
@@ -941,3 +944,20 @@ a {
 	height: 35px;
 }
 /*Customer Ended*/
+
+
+
+/*Read-mai Started*/
+.setti{
+	width: 135px;
+	height: 130px;
+}
+.chil{
+	width: inherit;
+	text-align: center;
+	box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
+}
+.btn-gr{
+	background-color: #74788d;
+}
+/*Read-mai Ended*/
