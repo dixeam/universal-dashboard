@@ -192,8 +192,8 @@
 				<i class="fas fa-eraser mr-3"></i><span class="">Forms</span><span class="badge badge-pill badge-danger float-right mt-1">6</span>
 			</li>
 			<ul class="formop sub bg-white rounded" style="display: none;">
-				<li class="py-1 pl-5"><a href=".html">Form Elements</a></li>
-				<li class="py-1 pl-5"><a href=".html">Form Validation</a></li>
+				<li class="py-1 pl-5"><a href="element.html">Form Elements</a></li>
+				<li class="py-1 pl-5"><a href="validation.html">Form Validation</a></li>
 				<li class="py-1 pl-5"><a href=".html">Form Advance Plugin</a></li>
 				<li class="py-1 pl-5"><a href=".html">Form Editor</a></li>
 				<li class="py-1 pl-5"><a href=".html">Form File Upload</a></li>
@@ -247,140 +247,75 @@
 	<div class="container-fluid px-0">
 		<div class="row">
 			<div class="col-md-12 bg-grey pb-3 px-3">
-				<div class="row mt-2">
+				<div class="row my-3">
 					<div class="col-md-12 d-flex justify-content-between">
-						<h5 class="text-dark f-16">ECOMMERCE</h5>
+						<h5 class="text-dark f-16">FORM MASK</h5>
 						<div class="d-flex align-items-center">
-							<span>Ecommerce</span> <i class="far fa-angle-right mt-1 mx-2"></i> <span>Cart</span>
+							<span>Forms</span> <i class="far fa-angle-right mt-1 mx-2"></i> <span>Form Mask</span>
 						</div>
 					</div>
 				</div>
-				<div class="row mt-3">
-					<div class="col-lg-12">
-						<div class="card">
-							<div class="card-body">
-								<div class="table-responsive">
-									<table class="table align-middle mb-0 table-nowrap table">
-										<thead class="bg-light">
-											<tr>
-												<th style="width: 120px;">Product</th>
-												<th>Product Desc</th>
-												<th>Price</th>
-												<th>Quantity</th>
-												<th>Total</th>
-												<th class="text-center">Action</th>
-											</tr>
-										</thead>
-										<tbody>
-											<tr>
-												<td>
-													<img src="assets/images/img-1.66329a13.png" alt="product-img" title="product-img" class="avatar-md">
-												</td>
-												<td>
-													<h5 class="font-size-14"><a class="text-dark" href="#">Full sleeve T-shirt</a>
-													</h5>
-													<p class="mb-0">Color : <span class="font-weight-normal">Blue</span></p>
-												</td>
-												<td class="align-middle"> $ 240
-												</td>
-												<td class="align-middle">
-													<div class="product-cart-touchspin border-0" style="width: 120px;">
-														<div class="bootstrap-touchspin bootstrap-touchspin-injected input-group"><span class="input-group-btn input-group-prepend"><button onclick="decrement()" type="button" class="bootstrap-touchspin-up btn btn-">-</button></span>
-															<input id="input1" name="demo_vertical" readonly="" type="text" class="form-control form-control zero" value="1"><span class="input-group-btn input-group-append"><button onclick="increment()" class="bootstrap-touchspin-down btn btn-">+</button></span>
-														</div>
-													</div>
-												</td>
-												<td class="align-middle">$ 480
-												</td>
-												<td class="text-center align-middle" style="width: 90px;"><a class="text-danger" href="#"><i class="fas fa-trash font-size-18 text-danger"></i></a>
-												</td>
-											</tr>
-											<tr>
-												<td>
-													<img src="assets/images/img-2.35207416.png" alt="product-img" title="product-img" class="avatar-md">
-												</td>
-												<td>
-													<h5 class="font-size-14 text-truncate"><a class="text-dark" href="#">Half sleeve T-shirt</a></h5>
-													<p class="mb-0">Color : <span class="font-weight-normal">Red</span></p>
-												</td>
-												<td class="align-middle">$ 225
-												</td>
-												<td class="align-middle">
-													<div class="product-cart-touchspin border-0" style="width: 120px;">
-														<div class="bootstrap-touchspin bootstrap-touchspin-injected input-group"><span class="input-group-btn input-group-prepend"><button type="button" class="bootstrap-touchspin-up btn btn-">-</button></span>
-															<input name="demo_vertical" readonly="" type="text" class="form-control form-control zero" value="1"><span class="input-group-btn input-group-append"><button type="button" class="bootstrap-touchspin-down btn btn-">+</button></span>
-														</div>
-													</div>
-												</td>
-												<td class="align-middle">$ 225
-												</td>
-												<td class="text-center align-middle" style="width: 90px;"><a class="action-icon text-danger" href="/ecommerce-cart"> <i class="fas fa-trash font-size-18 text-danger"></i></a>
-												</td>
-											</tr>
-											<tr>
-												<td>
-													<img src="assets/images/img-3.373bb9f9.png" alt="product-img" title="product-img" class="avatar-md">
-												</td>
-												<td><h5 class="font-size-14 text-truncate"><a class="text-dark" href="/ecommerce-product-details/3">Hoodie (Green)</a></h5><p class="mb-0">Color : <span class="font-weight-normal">Green</span></p>
-												</td>
-												<td class="align-middle">$ 275
-												</td>
-												<td class="align-middle">
-													<div class="product-cart-touchspin border-0" style="width: 120px;">
-														<div class="bootstrap-touchspin bootstrap-touchspin-injected input-group"><span class="input-group-btn input-group-prepend"><button type="button" class="bootstrap-touchspin-up btn btn-">-</button></span>
-															<input name="demo_vertical" readonly="" type="text" class="form-control form-control zero" value="2"><span class="input-group-btn input-group-append"><button type="button" class="bootstrap-touchspin-down btn btn-">+</button></span>
-														</div>
-													</div>
-												</td>
-												<td class="align-middle">$ 550
-												</td>
-												<td class="text-center align-middle" style="width: 90px;"><a class="action-icon text-danger" href="#"> <i class="fas fa-trash font-size-18 text-danger"></i></a>
-												</td>
-											</tr>
-											<tr>
-												<td><img src="assets/images/img-4.6e8d0ece.png" alt="product-img" title="product-img" class="avatar-md">
-												</td>
-												<td><h5 class="font-size-14 text-truncate"><a class="text-dark" href="/ecommerce-product-details/4">Hoodie (Gray)</a></h5><p class="mb-0">Color : <span class="font-weight-normal">Gray</span></p>
-												</td>
-												<td class="align-middle">$ 275
-												</td>
-												<td class="align-middle">
-													<div class="product-cart-touchspin border-0" style="width: 120px;">
-														<div class="bootstrap-touchspin bootstrap-touchspin-injected input-group"><span class="input-group-btn input-group-prepend"><button type="button" class="bootstrap-touchspin-up btn btn-">-</button></span>
-															<input name="demo_vertical" readonly="" type="text" class="form-control form-control zero" value="1"><span class="input-group-btn input-group-append"><button type="button" class="bootstrap-touchspin-down btn btn-">+</button></span>
-														</div>
-													</div>
-												</td>
-												<td class="align-middle">$ 275
-												</td>
-												<td class="text-center align-middle" style="width: 90px;"><a class="action-icon text-danger" href="/ecommerce-cart"> <i class="fas fa-trash font-size-18 text-danger"></i></a>
-												</td>
-											</tr>
-											<table class="table table-borderless text-right">
-												<tr class="bg-light">
-													<th colspan="6">Sub Total :</th>
-													<td>$ 1530</td>
-												</tr>
-												<tr class="bg-light">
-													<th  colspan="6">Discount :</th>
-													<td>- $ 30</td>
-												</tr>
-												<tr class="bg-light">
-													<th  colspan="6">Shipping Charge :</th>
-													<td>$ 25</td>
-												</tr>
-												<tr class="bg-light">
-													<th  colspan="6">Total :</th>
-													<td>$ 1525</td>
-												</tr>
-											</table>	
-										</tbody>
-									</table>
-								</div>
-							</div>
+
+				<div class="row mx-self">
+					<div class="col-md-12 bg-white p-3 rounded-left">
+						<span class="f-15 text-muted">Example</span>
+					</div>
+					<div class="col-md-6 bg-white p-3 rounded-left">
+						<div class="form-group mb-3">
+							<label class="text-or">ISBN 1</label>
+							<input type="text" name="number-1" class="form-control form-control-lg" data-mask="phone" data-format="999-99-999-9999-9" inputmode="text">
+							<span class="f-15 text-muted">e.g "999-99-999-9999-9"</span>
+						</div>
+						<div class="form-group mb-3">
+							<label class="text-or">ISBN 2</label>
+							<input type="text" name="number-2" class="form-control form-control-lg" data-mask="phone" data-format="999 99 999 9999 9" inputmode="text">
+							<span class="f-15 text-muted">999 99 999 9999 9</span>
+						</div>
+						<div class="form-group mb-3">
+							<label class="text-or">ISBN 3</label>
+							<input type="text" name="number-3" class="form-control form-control-lg" data-mask="phone" data-format="999/99/999/9999/9" inputmode="text">
+							<span class="f-15 text-muted">999/99/999/9999/9</span>
+						</div>
+						<div class="form-group mb-3">
+							<label class="text-or">IPV 4</label>
+							<input type="text" name="number-4" class="form-control form-control-lg" data-mask="phone" data-format="999.999.999.999" inputmode="text">
+							<span class="f-15 text-muted">192.168.110.310</span>
+						</div>
+						<div class="form-group mb-3">
+							<label class="text-or">IPV 6</label>
+							<input type="text" name="number-4" class="form-control form-control-lg" data-mask="phone" data-format="9999:9999:9999:9:999:9999:9999:9999" inputmode="text">
+							<span class="f-15 text-muted">4deg:1340:6547:2:540:h8je:ve73:98pd</span>
+						</div>
+					</div>
+					<div class="col-md-6 bg-white p-3 rounded-right">
+						<div class="form-group mb-3">
+							<label class="text-or">Tax ID</label>
+							<input type="text" name="number-6" class="form-control form-control-lg" data-mask="phone" data-format="99-9999999" inputmode="text">
+							<span class="f-15 text-muted">99-9999999</span>
+						</div>
+						<div class="form-group mb-3">
+							<label class="text-or">Phone</label>
+							<input type="text" name="number-7" class="form-control form-control-lg" data-mask="phone" data-format="(999) 999-9999" inputmode="text">
+							<span class="f-15 text-muted">(999) 999-9999</span>
+						</div>
+						<div class="form-group mb-3">
+							<label class="text-or">Currency</label>
+							<input type="text" name="number-8" class="form-control form-control-lg" data-mask="phone" data-format="$ 999,999,999.99" inputmode="text">
+							<span class="f-15 text-muted">$ 999,999,999.99</span>
+						</div>
+						<div class="form-group mb-3">
+							<label class="text-or">Date</label>
+							<input type="text" name="number-8" class="form-control form-control-lg" data-mask="datetime" data-format="mm/dd/yyyy" inputmode="numeric">
+							<span class="f-15 text-muted">mm/dd/yyyy</span>
+						</div>
+						<div class="form-group mb-3">
+							<label class="text-or">Date 2</label>
+							<input type="text" name="number-8" class="form-control form-control-lg" data-mask="datetime" data-format="mm-dd-yyyy" inputmode="numeric">
+							<span class="f-15 text-muted">mm-dd-yyyy</span>
 						</div>
 					</div>
 				</div>
+				
 			</div>
 		</div>
 	</div>
@@ -394,9 +329,10 @@
 
 
 
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<script src="https://dixeam.com/cdn/basejs/3.0/base.js"></script>
 
 	<script type="text/javascript">
 		$(document).ready(function(){
@@ -455,6 +391,12 @@
 			$(".ecomop").click(function(){
 				$(".ecomcl").toggle();
 			})
+			baseJS.init(
+			{
+				"lang": "en",
+				"imasking": true
+			}
+			);
 		});
 	</script>
 	<script>
@@ -469,22 +411,25 @@
 		}
 	</script>
 	<script type="text/javascript">
-		//var counterVal = 0;
+		(function () {
+			'use strict'
 
-		function increment() {
-			var value1 = document.getElementById('input1').value;
-			var increme = Math.floor(value1);
-			increme++;
-			document.getElementById("input1").value = increme;
-			
-		}
-		function decrement() {
-			var value1 = document.getElementById('input1').value;
-			var increme = Math.floor(value1);
-			increme--;
-			document.getElementById("input1").value = increme;
-			
-		}
+			var forms = document.querySelectorAll('.needs-validation')
+
+			Array.prototype.slice.call(forms)
+			.forEach(function (form) {
+				form.addEventListener('submit', function (event) {
+					if (!form.checkValidity()) {
+						event.preventDefault()
+						event.stopPropagation()
+					}
+
+					form.classList.add('was-validated')
+				}, false)
+			})
+		})()
+
 	</script>
+
 </body>
 </html>

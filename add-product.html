@@ -125,7 +125,7 @@
 				<li class="py-1 pl-5"><a href="order.html">Orders</a></li>
 				<li class="py-1 pl-5"><a href="customer.html">Customers</a></li>
 				<li class="py-1 pl-5"><a href="cart.html">Cart</a></li>
-				<li class="py-1 pl-5"><a href="checkout.html">Checout</a></li>
+				<li class="py-1 pl-5"><a href="checkout.html">Checkout</a></li>
 				<li class="py-1 pl-5"><a href="shop.html">Shops</a></li>
 				<li class="py-1 pl-5"><a href="add-product.html">Add Product</a></li>
 			</ul>
@@ -192,14 +192,14 @@
 				<i class="fas fa-eraser mr-3"></i><span class="">Forms</span><span class="badge badge-pill badge-danger float-right mt-1">6</span>
 			</li>
 			<ul class="formop sub bg-white rounded" style="display: none;">
-				<li class="py-1 pl-5"><a href=".html">Form Elements</a></li>
-				<li class="py-1 pl-5"><a href=".html">Form Validation</a></li>
+				<li class="py-1 pl-5"><a href="element.html">Form Elements</a></li>
+				<li class="py-1 pl-5"><a href="validation.html">Form Validation</a></li>
 				<li class="py-1 pl-5"><a href=".html">Form Advance Plugin</a></li>
 				<li class="py-1 pl-5"><a href=".html">Form Editor</a></li>
 				<li class="py-1 pl-5"><a href=".html">Form File Upload</a></li>
-				<li class="py-1 pl-5"><a href=".html">Form X-editabe</a></li>
-				<li class="py-1 pl-5"><a href=".html">Form Wizard</a></li>
-				<li class="py-1 pl-5"><a href=".html">Form Mask</a></li>
+				<li class="py-1 pl-5"><a href="form-edit.html">Form X-editabe</a></li>
+				<li class="py-1 pl-5"><a href="wizard.html">Form Wizard</a></li>
+				<li class="py-1 pl-5"><a href="mask.html">Form Mask</a></li>
 			</ul>
 			<li class="mb-2 p-2 hidden">
 				<i class="fas fa-table mr-3"></i><span class="">Tabels</span><i class="fas fa-caret-down float-right"></i>
@@ -247,135 +247,148 @@
 	<div class="container-fluid px-0">
 		<div class="row">
 			<div class="col-md-12 bg-grey pb-3 px-3">
-				<div class="row mt-2">
+				<div class="row my-3">
 					<div class="col-md-12 d-flex justify-content-between">
 						<h5 class="text-dark f-16">ECOMMERCE</h5>
 						<div class="d-flex align-items-center">
-							<span>Ecommerce</span> <i class="far fa-angle-right mt-1 mx-2"></i> <span>Cart</span>
+							<span>Ecommerce</span> <i class="mt-1 mx-2 far fa-angle-right"></i> <span>Add Product</span>
 						</div>
 					</div>
 				</div>
-				<div class="row mt-3">
-					<div class="col-lg-12">
-						<div class="card">
-							<div class="card-body">
-								<div class="table-responsive">
-									<table class="table align-middle mb-0 table-nowrap table">
-										<thead class="bg-light">
-											<tr>
-												<th style="width: 120px;">Product</th>
-												<th>Product Desc</th>
-												<th>Price</th>
-												<th>Quantity</th>
-												<th>Total</th>
-												<th class="text-center">Action</th>
-											</tr>
-										</thead>
-										<tbody>
-											<tr>
-												<td>
-													<img src="assets/images/img-1.66329a13.png" alt="product-img" title="product-img" class="avatar-md">
-												</td>
-												<td>
-													<h5 class="font-size-14"><a class="text-dark" href="#">Full sleeve T-shirt</a>
-													</h5>
-													<p class="mb-0">Color : <span class="font-weight-normal">Blue</span></p>
-												</td>
-												<td class="align-middle"> $ 240
-												</td>
-												<td class="align-middle">
-													<div class="product-cart-touchspin border-0" style="width: 120px;">
-														<div class="bootstrap-touchspin bootstrap-touchspin-injected input-group"><span class="input-group-btn input-group-prepend"><button onclick="decrement()" type="button" class="bootstrap-touchspin-up btn btn-">-</button></span>
-															<input id="input1" name="demo_vertical" readonly="" type="text" class="form-control form-control zero" value="1"><span class="input-group-btn input-group-append"><button onclick="increment()" class="bootstrap-touchspin-down btn btn-">+</button></span>
-														</div>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="bg-white p-3 rounded">
+							<div id="checkout-nav-pills-wizard" class="twitter-wizard">
+								<ul class="nav nav-pills twitter-wizard-nav nav-justified" role="tablist">
+									<li class="nav-item">
+										<a class="nav-link active" data-toggle="pill" href="#home">
+											<span class="step-number">01</span>
+											<span class="step-title">Basic Info</span>
+										</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" data-toggle="pill" href="#menu1">
+											<span class="step-number">02</span>
+											<span class="step-title">Product Img</span>
+										</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" data-toggle="pill" href="#menu2">
+											<span class="step-number">03</span>
+											<span class="step-title">Meta Data</span>
+										</a>
+									</li>
+								</ul>
+								<!-- Tab panes -->
+								<div class="tab-content twitter-wizard-tab-content">
+									<div id="home" class="tab-pane active"><br>
+										<div class="h5 card-title">Basic Information</div>
+										<p class="card-title-desc">Fill in all information below</p>
+										<form>
+											<div class="mb-3">
+												<label for="productname" class="form-label">Product Name</label>
+												<input id="productname" name="productname" type="text" class="form-control form-control">
+											</div>
+											<div class="row">
+												<div class="col-lg-4">
+													<div class="mb-3">
+														<label for="manufacturername" class="form-label">Manufacturer Name</label>
+														<input id="manufacturername" name="manufacturername" type="text" class="form-control form-control">
 													</div>
-												</td>
-												<td class="align-middle">$ 480
-												</td>
-												<td class="text-center align-middle" style="width: 90px;"><a class="text-danger" href="#"><i class="fas fa-trash font-size-18 text-danger"></i></a>
-												</td>
-											</tr>
-											<tr>
-												<td>
-													<img src="assets/images/img-2.35207416.png" alt="product-img" title="product-img" class="avatar-md">
-												</td>
-												<td>
-													<h5 class="font-size-14 text-truncate"><a class="text-dark" href="#">Half sleeve T-shirt</a></h5>
-													<p class="mb-0">Color : <span class="font-weight-normal">Red</span></p>
-												</td>
-												<td class="align-middle">$ 225
-												</td>
-												<td class="align-middle">
-													<div class="product-cart-touchspin border-0" style="width: 120px;">
-														<div class="bootstrap-touchspin bootstrap-touchspin-injected input-group"><span class="input-group-btn input-group-prepend"><button type="button" class="bootstrap-touchspin-up btn btn-">-</button></span>
-															<input name="demo_vertical" readonly="" type="text" class="form-control form-control zero" value="1"><span class="input-group-btn input-group-append"><button type="button" class="bootstrap-touchspin-down btn btn-">+</button></span>
-														</div>
+												</div>
+												<div class="col-lg-4">
+													<div class="mb-3">
+														<label for="manufacturerbrand" class="form-label">Manufacturer Brand</label>
+														<input id="manufacturerbrand" name="manufacturerbrand" type="text" class="form-control form-control">
 													</div>
-												</td>
-												<td class="align-middle">$ 225
-												</td>
-												<td class="text-center align-middle" style="width: 90px;"><a class="action-icon text-danger" href="/ecommerce-cart"> <i class="fas fa-trash font-size-18 text-danger"></i></a>
-												</td>
-											</tr>
-											<tr>
-												<td>
-													<img src="assets/images/img-3.373bb9f9.png" alt="product-img" title="product-img" class="avatar-md">
-												</td>
-												<td><h5 class="font-size-14 text-truncate"><a class="text-dark" href="/ecommerce-product-details/3">Hoodie (Green)</a></h5><p class="mb-0">Color : <span class="font-weight-normal">Green</span></p>
-												</td>
-												<td class="align-middle">$ 275
-												</td>
-												<td class="align-middle">
-													<div class="product-cart-touchspin border-0" style="width: 120px;">
-														<div class="bootstrap-touchspin bootstrap-touchspin-injected input-group"><span class="input-group-btn input-group-prepend"><button type="button" class="bootstrap-touchspin-up btn btn-">-</button></span>
-															<input name="demo_vertical" readonly="" type="text" class="form-control form-control zero" value="2"><span class="input-group-btn input-group-append"><button type="button" class="bootstrap-touchspin-down btn btn-">+</button></span>
-														</div>
+												</div>
+												<div class="col-lg-4">
+													<div class="mb-3">
+														<label for="price" class="form-label">Price</label>
+														<input id="price" name="price" type="text" class="form-control form-control">
 													</div>
-												</td>
-												<td class="align-middle">$ 550
-												</td>
-												<td class="text-center align-middle" style="width: 90px;"><a class="action-icon text-danger" href="#"> <i class="fas fa-trash font-size-18 text-danger"></i></a>
-												</td>
-											</tr>
-											<tr>
-												<td><img src="assets/images/img-4.6e8d0ece.png" alt="product-img" title="product-img" class="avatar-md">
-												</td>
-												<td><h5 class="font-size-14 text-truncate"><a class="text-dark" href="/ecommerce-product-details/4">Hoodie (Gray)</a></h5><p class="mb-0">Color : <span class="font-weight-normal">Gray</span></p>
-												</td>
-												<td class="align-middle">$ 275
-												</td>
-												<td class="align-middle">
-													<div class="product-cart-touchspin border-0" style="width: 120px;">
-														<div class="bootstrap-touchspin bootstrap-touchspin-injected input-group"><span class="input-group-btn input-group-prepend"><button type="button" class="bootstrap-touchspin-up btn btn-">-</button></span>
-															<input name="demo_vertical" readonly="" type="text" class="form-control form-control zero" value="1"><span class="input-group-btn input-group-append"><button type="button" class="bootstrap-touchspin-down btn btn-">+</button></span>
-														</div>
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-md-6">
+													<div class="mb-3">
+														<label class="form-label">Category</label>
+														<select class="form-control select2">
+															<option>Select</option>
+															<option value="EL">Electronic</option>
+															<option value="FA">Fashion</option>
+															<option value="FI">Fitness</option>
+														</select>
 													</div>
-												</td>
-												<td class="align-middle">$ 275
-												</td>
-												<td class="text-center align-middle" style="width: 90px;"><a class="action-icon text-danger" href="/ecommerce-cart"> <i class="fas fa-trash font-size-18 text-danger"></i></a>
-												</td>
-											</tr>
-											<table class="table table-borderless text-right">
-												<tr class="bg-light">
-													<th colspan="6">Sub Total :</th>
-													<td>$ 1530</td>
-												</tr>
-												<tr class="bg-light">
-													<th  colspan="6">Discount :</th>
-													<td>- $ 30</td>
-												</tr>
-												<tr class="bg-light">
-													<th  colspan="6">Shipping Charge :</th>
-													<td>$ 25</td>
-												</tr>
-												<tr class="bg-light">
-													<th  colspan="6">Total :</th>
-													<td>$ 1525</td>
-												</tr>
-											</table>	
-										</tbody>
-									</table>
+												</div>
+												<div class="col-md-6">
+													<div class="mb-3">
+														<label class="form-label">Features</label>
+														<select class="form-control select2">
+															<option>Choose</option>
+															<option value="Alaska">Alaska</option>
+															<option value="Havaii">Havaii</option>
+															<option value="California">California</option>
+															<option value="Naveda">Naveda</option>
+															<option value="Oregon">Oregon</option>
+															<option value="Washington">Washington</option>
+														</select>
+													</div>
+												</div>
+											</div>
+											<div class="mb-3">
+												<label class="form-label" for="productdesc">Product Description</label>
+												<textarea class="form-control" id="productdesc" rows="5"></textarea>
+											</div>
+										</form>
+									</div>
+									<div id="menu1" class="tab-pane fade"><br>
+										<div class="h4 card-title">Product Images</div>
+										<p class="card-title-desc">Upload product image</p>
+										<form class="dropzone">
+											<div>
+												<div class="dz-message needsclick" tabindex="0">
+													<input multiple="" type="file" autocomplete="off" tabindex="-1" style="display: none;">
+													<div class="mb-3">
+														<i class="display-4 text-muted fas fa-cloud-upload"></i>
+													</div>
+													<h4>Drop files here or click to upload.</h4>
+												</div>
+											</div>
+											<div class="dropzone-previews mt-3" id="file-previews"></div>
+										</form>
+									</div>
+									<div id="menu2" class="tab-pane fade"><br>
+										<div class="h4 card-title">Meta Data</div>
+										<p class="card-title-desc">Fill all information below</p>
+										<form>
+											<div class="row">
+												<div class="col-lg-6">
+													<div class="mb-3">
+														<label for="manufacturerbrand" class="form-label">Meta Title</label>
+														<input id="metatitle" name="manufacturerbrand" type="text" class="form-control form-control">
+													</div>
+												</div>
+												<div class="col-lg-6">
+													<div class="mb-3">
+														<label for="price" class="form-label">Meta Keywords</label>
+														<input id="metaKeywords" name="price" type="text" class="form-control form-control">
+													</div>
+												</div>
+											</div>
+											<div class="mb-3">
+												<label for="metadescription" class="">Meta Description
+												</label>
+												<textarea class="form-control" id="metadescription" rows="5">
+													
+												</textarea>
+											</div>
+											<div class="text-center mt-4">
+												<button type="submit" class="me-1 btn btn-primary">Save Changes</button> 
+												<button type="submit" class="btn btn-light">Cancel</button>
+											</div>
+										</form>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -466,24 +479,6 @@
 
 		function closeNav() {
 			document.getElementById("mySidenav").style.width = "0";
-		}
-	</script>
-	<script type="text/javascript">
-		//var counterVal = 0;
-
-		function increment() {
-			var value1 = document.getElementById('input1').value;
-			var increme = Math.floor(value1);
-			increme++;
-			document.getElementById("input1").value = increme;
-			
-		}
-		function decrement() {
-			var value1 = document.getElementById('input1').value;
-			var increme = Math.floor(value1);
-			increme--;
-			document.getElementById("input1").value = increme;
-			
 		}
 	</script>
 </body>

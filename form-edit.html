@@ -125,7 +125,7 @@
 				<li class="py-1 pl-5"><a href="order.html">Orders</a></li>
 				<li class="py-1 pl-5"><a href="customer.html">Customers</a></li>
 				<li class="py-1 pl-5"><a href="cart.html">Cart</a></li>
-				<li class="py-1 pl-5"><a href="checkout.html">Checout</a></li>
+				<li class="py-1 pl-5"><a href="checkout.html">Checkout</a></li>
 				<li class="py-1 pl-5"><a href="shop.html">Shops</a></li>
 				<li class="py-1 pl-5"><a href="add-product.html">Add Product</a></li>
 			</ul>
@@ -192,14 +192,14 @@
 				<i class="fas fa-eraser mr-3"></i><span class="">Forms</span><span class="badge badge-pill badge-danger float-right mt-1">6</span>
 			</li>
 			<ul class="formop sub bg-white rounded" style="display: none;">
-				<li class="py-1 pl-5"><a href=".html">Form Elements</a></li>
-				<li class="py-1 pl-5"><a href=".html">Form Validation</a></li>
+				<li class="py-1 pl-5"><a href="element.html">Form Elements</a></li>
+				<li class="py-1 pl-5"><a href="validation.html">Form Validation</a></li>
 				<li class="py-1 pl-5"><a href=".html">Form Advance Plugin</a></li>
 				<li class="py-1 pl-5"><a href=".html">Form Editor</a></li>
 				<li class="py-1 pl-5"><a href=".html">Form File Upload</a></li>
-				<li class="py-1 pl-5"><a href=".html">Form X-editabe</a></li>
-				<li class="py-1 pl-5"><a href=".html">Form Wizard</a></li>
-				<li class="py-1 pl-5"><a href=".html">Form Mask</a></li>
+				<li class="py-1 pl-5"><a href="form-edit.html">Form X-editabe</a></li>
+				<li class="py-1 pl-5"><a href="wizard.html">Form Wizard</a></li>
+				<li class="py-1 pl-5"><a href="mask.html">Form Mask</a></li>
 			</ul>
 			<li class="mb-2 p-2 hidden">
 				<i class="fas fa-table mr-3"></i><span class="">Tabels</span><i class="fas fa-caret-down float-right"></i>
@@ -247,133 +247,71 @@
 	<div class="container-fluid px-0">
 		<div class="row">
 			<div class="col-md-12 bg-grey pb-3 px-3">
-				<div class="row mt-2">
+				<div class="row my-3">
 					<div class="col-md-12 d-flex justify-content-between">
-						<h5 class="text-dark f-16">ECOMMERCE</h5>
+						<h5 class="text-dark f-16">FORM XEDITABLE</h5>
 						<div class="d-flex align-items-center">
-							<span>Ecommerce</span> <i class="far fa-angle-right mt-1 mx-2"></i> <span>Cart</span>
+							<span>Forms</span> <i class="far fa-angle-right mt-1 mx-2"></i> <span>Form Xeditable</span>
 						</div>
 					</div>
 				</div>
-				<div class="row mt-3">
-					<div class="col-lg-12">
-						<div class="card">
-							<div class="card-body">
-								<div class="table-responsive">
-									<table class="table align-middle mb-0 table-nowrap table">
-										<thead class="bg-light">
-											<tr>
-												<th style="width: 120px;">Product</th>
-												<th>Product Desc</th>
-												<th>Price</th>
-												<th>Quantity</th>
-												<th>Total</th>
-												<th class="text-center">Action</th>
-											</tr>
-										</thead>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="bg-white p-3 rounded">
+							<span class="text-muted">Inline Example</span>
+							<div class="mt-2 f-14">
+								<span class="text-muted">This library allows you to create editable elements on your page. It can be used with any engine (bootstrap, jquery-ui, jquery only) and includes both popup and inline modes. Please try out demo to see how it works.</span>
+							</div>
+							<div class="table-responsive mt-4">
+								<div class="react-bootstrap-table">
+									<table class="table table align-middle table-nowrap table-check">
 										<tbody>
 											<tr>
-												<td>
-													<img src="assets/images/img-1.66329a13.png" alt="product-img" title="product-img" class="avatar-md">
-												</td>
-												<td>
-													<h5 class="font-size-14"><a class="text-dark" href="#">Full sleeve T-shirt</a>
-													</h5>
-													<p class="mb-0">Color : <span class="font-weight-normal">Blue</span></p>
-												</td>
-												<td class="align-middle"> $ 240
-												</td>
-												<td class="align-middle">
-													<div class="product-cart-touchspin border-0" style="width: 120px;">
-														<div class="bootstrap-touchspin bootstrap-touchspin-injected input-group"><span class="input-group-btn input-group-prepend"><button onclick="decrement()" type="button" class="bootstrap-touchspin-up btn btn-">-</button></span>
-															<input id="input1" name="demo_vertical" readonly="" type="text" class="form-control form-control zero" value="1"><span class="input-group-btn input-group-append"><button onclick="increment()" class="bootstrap-touchspin-down btn btn-">+</button></span>
+												<td class="w-50 text-muted">Inline</td>
+												<td class="w-50">Example</td>
+											</tr>
+											<tr>
+												<td class="w-50 text-muted">Simple Text Field</td>
+												<td class="w-50">
+													<div>
+														<span class="text-muted f-15 sp-1 " id="val-1">No Value</span>
+														<div class="input-1" style="display: none;">
+															<input class="" type="text" name="" id="inp-1">
+															<button class="btn-custom btn-success" onclick="tick()"><i class="far fa-check text-white"></i></button>
+															<button class="btn-custom btn-danger" onclick="wrong()"><i class="far fa-times text-white"></i></button>
 														</div>
 													</div>
-												</td>
-												<td class="align-middle">$ 480
-												</td>
-												<td class="text-center align-middle" style="width: 90px;"><a class="text-danger" href="#"><i class="fas fa-trash font-size-18 text-danger"></i></a>
+													<span class="click-1 f-15 text-blue">superuser</span>
 												</td>
 											</tr>
 											<tr>
-												<td>
-													<img src="assets/images/img-2.35207416.png" alt="product-img" title="product-img" class="avatar-md">
-												</td>
-												<td>
-													<h5 class="font-size-14 text-truncate"><a class="text-dark" href="#">Half sleeve T-shirt</a></h5>
-													<p class="mb-0">Color : <span class="font-weight-normal">Red</span></p>
-												</td>
-												<td class="align-middle">$ 225
-												</td>
-												<td class="align-middle">
-													<div class="product-cart-touchspin border-0" style="width: 120px;">
-														<div class="bootstrap-touchspin bootstrap-touchspin-injected input-group"><span class="input-group-btn input-group-prepend"><button type="button" class="bootstrap-touchspin-up btn btn-">-</button></span>
-															<input name="demo_vertical" readonly="" type="text" class="form-control form-control zero" value="1"><span class="input-group-btn input-group-append"><button type="button" class="bootstrap-touchspin-down btn btn-">+</button></span>
+												<td class="w-50 text-muted">Empty Text Field</td>
+												<td class="w-50">
+													<div>
+														<span class="text-muted f-15 sp-2 " id="val-2">No Value</span>
+														<div class="input-2" style="display: none;">
+															<input class="" type="text" name="" id="inp-2">
+															<button class="btn-custom btn-success" onclick="hello()"><i class="far fa-check text-white"></i></button>
+															<button class="btn-custom btn-danger" onclick="hy()"><i class="far fa-times text-white"></i></button>
 														</div>
 													</div>
-												</td>
-												<td class="align-middle">$ 225
-												</td>
-												<td class="text-center align-middle" style="width: 90px;"><a class="action-icon text-danger" href="/ecommerce-cart"> <i class="fas fa-trash font-size-18 text-danger"></i></a>
+													<span class="click-2 f-15 text-blue">Empty</span>
 												</td>
 											</tr>
 											<tr>
-												<td>
-													<img src="assets/images/img-3.373bb9f9.png" alt="product-img" title="product-img" class="avatar-md">
-												</td>
-												<td><h5 class="font-size-14 text-truncate"><a class="text-dark" href="/ecommerce-product-details/3">Hoodie (Green)</a></h5><p class="mb-0">Color : <span class="font-weight-normal">Green</span></p>
-												</td>
-												<td class="align-middle">$ 275
-												</td>
-												<td class="align-middle">
-													<div class="product-cart-touchspin border-0" style="width: 120px;">
-														<div class="bootstrap-touchspin bootstrap-touchspin-injected input-group"><span class="input-group-btn input-group-prepend"><button type="button" class="bootstrap-touchspin-up btn btn-">-</button></span>
-															<input name="demo_vertical" readonly="" type="text" class="form-control form-control zero" value="2"><span class="input-group-btn input-group-append"><button type="button" class="bootstrap-touchspin-down btn btn-">+</button></span>
+												<td class="w-50 text-muted">Select local</td>
+												<td class="w-50">
+													<div>
+														<span class="text-muted f-15 sp-3 " id="val-3">No Value</span>
+														<div class="input-3" style="display: none;">
+															<input class="" type="text" name="" id="inp-3">
+															<button class="btn-custom btn-success" onclick="thos()"><i class="far fa-check text-white"></i></button>
+															<button class="btn-custom btn-danger" onclick="thot()"><i class="far fa-times text-white"></i></button>
 														</div>
 													</div>
-												</td>
-												<td class="align-middle">$ 550
-												</td>
-												<td class="text-center align-middle" style="width: 90px;"><a class="action-icon text-danger" href="#"> <i class="fas fa-trash font-size-18 text-danger"></i></a>
+													<span class="click-3 f-15 text-blue">male</span>
 												</td>
 											</tr>
-											<tr>
-												<td><img src="assets/images/img-4.6e8d0ece.png" alt="product-img" title="product-img" class="avatar-md">
-												</td>
-												<td><h5 class="font-size-14 text-truncate"><a class="text-dark" href="/ecommerce-product-details/4">Hoodie (Gray)</a></h5><p class="mb-0">Color : <span class="font-weight-normal">Gray</span></p>
-												</td>
-												<td class="align-middle">$ 275
-												</td>
-												<td class="align-middle">
-													<div class="product-cart-touchspin border-0" style="width: 120px;">
-														<div class="bootstrap-touchspin bootstrap-touchspin-injected input-group"><span class="input-group-btn input-group-prepend"><button type="button" class="bootstrap-touchspin-up btn btn-">-</button></span>
-															<input name="demo_vertical" readonly="" type="text" class="form-control form-control zero" value="1"><span class="input-group-btn input-group-append"><button type="button" class="bootstrap-touchspin-down btn btn-">+</button></span>
-														</div>
-													</div>
-												</td>
-												<td class="align-middle">$ 275
-												</td>
-												<td class="text-center align-middle" style="width: 90px;"><a class="action-icon text-danger" href="/ecommerce-cart"> <i class="fas fa-trash font-size-18 text-danger"></i></a>
-												</td>
-											</tr>
-											<table class="table table-borderless text-right">
-												<tr class="bg-light">
-													<th colspan="6">Sub Total :</th>
-													<td>$ 1530</td>
-												</tr>
-												<tr class="bg-light">
-													<th  colspan="6">Discount :</th>
-													<td>- $ 30</td>
-												</tr>
-												<tr class="bg-light">
-													<th  colspan="6">Shipping Charge :</th>
-													<td>$ 25</td>
-												</tr>
-												<tr class="bg-light">
-													<th  colspan="6">Total :</th>
-													<td>$ 1525</td>
-												</tr>
-											</table>	
 										</tbody>
 									</table>
 								</div>
@@ -469,21 +407,57 @@
 		}
 	</script>
 	<script type="text/javascript">
-		//var counterVal = 0;
+		$(".click-1").on("click",function(){
 
-		function increment() {
-			var value1 = document.getElementById('input1').value;
-			var increme = Math.floor(value1);
-			increme++;
-			document.getElementById("input1").value = increme;
-			
+			$(".input-1").css("display","block")
+			$(".sp-1").css("display","none")
+		});
+		function tick(){
+			var b=document.getElementById("inp-1").value;
+
+			document.getElementById("val-1").innerHTML=b;
+			$(".input-1").css("display","none")
+			$(".sp-1").css("display","block")
 		}
-		function decrement() {
-			var value1 = document.getElementById('input1').value;
-			var increme = Math.floor(value1);
-			increme--;
-			document.getElementById("input1").value = increme;
-			
+		function wrong(){
+			$(".input-1").css("display","none")
+			$(".sp-1").css("display","block")
+		}
+	</script>
+	<script type="text/javascript">
+		$(".click-2").on("click",function(){
+
+			$(".input-2").css("display","block")
+			$(".sp-2").css("display","none")
+		});
+		function hello(){
+			var b=document.getElementById("inp-2").value;
+
+			document.getElementById("val-2").innerHTML=b;
+			$(".input-2").css("display","none")
+			$(".sp-2").css("display","block")
+		}
+		function hy(){
+			$(".input-2").css("display","none")
+			$(".sp-2").css("display","block")
+		}
+	</script>
+	<script type="text/javascript">
+		$(".click-3").on("click",function(){
+
+			$(".input-3").css("display","block")
+			$(".sp-3").css("display","none")
+		});
+		function thos(){
+			var b=document.getElementById("inp-3").value;
+
+			document.getElementById("val-3").innerHTML=b;
+			$(".input-3").css("display","none")
+			$(".sp-3").css("display","block")
+		}
+		function thot(){
+			$(".input-3").css("display","none")
+			$(".sp-2").css("display","block")
 		}
 	</script>
 </body>

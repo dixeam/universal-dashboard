@@ -461,7 +461,26 @@
 						<div class="bg-white p-3 rounded">
 							<h5 class="f-16 fw-500">Switches</h5>
 							<span class="text-muted f-15">A switch has the markup of a custom checkbox but uses the<span class="text-pink">.custom-switch </span>  className to render a toggle switch. Switches also support the  <span class="text-pink">disabled </span>attribute</span>
-							
+							<div class="custom-control custom-switch mt-4">
+								<input type="checkbox" class="custom-control-input" id="customSwitch1">
+								<label class="custom-control-label" for="customSwitch1">Toggle this switch element</label>
+							</div>
+							<div class="custom-control custom-switch">
+								<input type="checkbox" class="custom-control-input" disabled id="customSwitch2">
+								<label class="custom-control-label" for="customSwitch2">Disabled switch element</label>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="bg-white p-3 rounded">
+							<h5 class="f-16 fw-500">File browser</h5>
+							<span class="text-muted f-15">The file input is the most gnarly of the bunch and requires additional JavaScript if you’d like to hook them up with functional Choose file… and selected file name text.</span>
+							<form class="mt-4">
+								<div class="form-group">
+									<label for="">Example file input</label>
+									<input type="file" class="form-control" id="">
+								</div>
+							</form>
 						</div>
 					</div>
 				</div>
