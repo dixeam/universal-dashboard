@@ -224,6 +224,11 @@ body,p,a,ul li,span,h4,h5,label{
 	height: 100vh;
 	background-size: cover;
 }
+.bg-img{
+	background-image: url(../images/imoge.jpg);
+	height: 100vh;
+	background-size: cover;
+}
 .poso{
 	top: 16px;
 	left: 14px;
@@ -279,7 +284,7 @@ body,p,a,ul li,span,h4,h5,label{
 
 }
 .bg-black{
-	background: black;
+
 }
 @media only screen and (max-width: 767px) {
 	.box-1{
@@ -1402,7 +1407,7 @@ input[type="file" i] {
 	margin-bottom: 5px;
 }
 .shadow-sm {
-    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
+	box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
 }
 .ck-editor__editable{
 	height: 170px !important;
@@ -1412,5 +1417,102 @@ input[type="file" i] {
 
 
 
- 	
+/*Starter Page Started*/
+.custom-height{
+	height: 80vh;
+}
+/*Starter Page Ended*/
+
+
+
+
+/*Maintaianne Started*/
+.main-div{
+	overflow: hidden;
+}
+.disc{
+	color: #343a40;
+	font-size: 25px;
+	font-weight: 500 !important;
+}
+.icon-2{
+	padding: 0px 5px;
+	height: 50px;
+	width: 50px;
+	border-radius: 100%;
+	margin: 0 3px 0px 0px;
+	background-color: rgba(86,100,210,.25)!important;
+	align-items: center;
+	justify-content: center;
+}
+.f-20{
+	font-size: 20px;
+}
+.text-disc{
+	color: #343a40;
+}
+/*Maintaianne Ended*/
+
+
+
+
+/*FAQ Started*/
+
+.cus .nav-item .nav-link.active, .nav-pills .show>.nav-link {
+	border: 2px solid #5664d2;
+	background-color: transparent;
+}
+.cus .nav-item .nav-link{
+	border: 2px solid #eff2f7;
+}
+.icon-3{
+	height: 25px;
+	width: 25px;
+	background-color: #5664d2;
+	border-radius: 100%;
+}
+
+/*FAQ Ended*/
+
+
+
+/*Buttons Started*/
+.breadcrumb {
+	list-style: none;
+	background-color: #f1f5f7!important;
+}
+a, button {
+	outline: none!important;
+}
+a {
+	text-decoration: none!important;
+}
+.card-title-desc {
+	color: #74788d;
+	margin-bottom: 24px;
+}
+.button-items {
+	margin-left: -8px;
+	margin-bottom: -12px;
+}
+.btn-rounded {
+	border-radius: 30px!important;
+}
+.w-xs {
+	min-width: 80px;
+}.w-sm {
+	min-width: 95px;
+}
+.w-md {
+	min-width: 110px;
+}
+.w-lg {
+	min-width: 140px;
+}
+/*Buttons Ended*/
+
+
+
+
+
 
