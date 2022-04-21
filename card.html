@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Dashboard</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+	<link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400;1,500&family=Open+Sans:wght@500;600;700&family=Poppins:wght@200;300;400;500&display=swap" rel="stylesheet">
+	<style type="text/css">
+		.btn{
+			color: white !important;
+		}
+	</style>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light bd-bt py-0">
+		<a class="navbar-brand d-flex" href="#"><i class="fas fa-bars" id="mbso" onclick="openNav()"></i><i class="far fa-cloud-upload-alt text-primary ml-3 mr-4"></i><div class="f-12">nclouds JIRA</div></a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto">
+
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle f-12 text-dark mt-2" href="#"data-toggle="dropdown">
+						Your Work
+					</a>
+					<div class="dropdown-menu">
+						<a class="dropdown-item" href="#">Work 1</a>
+						<a class="dropdown-item" href="#">Work 2</a>
+						<a class="dropdown-item" href="#">Work 3</a>
+					</div>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle f-12 text-dark mt-2" href="#"data-toggle="dropdown">
+						Projects
+					</a>
+					<div class="dropdown-menu">
+						<div class="dropdown-menu-coloums d-flex">
+							<div class="dropdown-menu-column">
+								<a class="dropdown-item" href="#">Project 1</a>
+								<a class="dropdown-item" href="#">Project 2</a>
+								<a class="dropdown-item" href="#">Project 3</a>
+							</div>
+							<div class="dropdown-menu-column">
+								<a class="dropdown-item" href="#">Project 4</a>
+								<a class="dropdown-item" href="#">Project 5</a>
+								<a class="dropdown-item" href="#">Project 6</a>
+							</div>
+							<div class="dropdown-menu-column">
+								<a class="dropdown-item" href="#">Project 7</a>
+								<a class="dropdown-item" href="#">Project 8</a>
+								<a class="dropdown-item" href="#">Project 9</a>
+							</div>
+						</div>
+						
+					</div>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle f-12 text-dark mt-2" href="#"data-toggle="dropdown">
+						Filters
+					</a>
+					<div class="dropdown-menu">
+						<a class="dropdown-item" href="#">Filter 1</a>
+						<a class="dropdown-item" href="#">Filter 2</a>
+						<a class="dropdown-item" href="#">Filter 3</a>
+					</div>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle f-12 text-dark mt-2" href="#"data-toggle="dropdown">
+						Dashboards
+					</a>
+					<div class="dropdown-menu">
+						<a class="dropdown-item" href="#">Dashboard 1</a>
+						<a class="dropdown-item" href="#">Dashboard 2</a>
+						<a class="dropdown-item" href="#">Dashboard 3</a>
+					</div>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle f-12 text-dark mt-2" href="#"data-toggle="dropdown">
+						People
+					</a>
+					<div class="dropdown-menu">
+						<a class="dropdown-item" href="#">People 1</a>
+						<a class="dropdown-item" href="#">People 2</a>
+						<a class="dropdown-item" href="#">People 3</a>
+					</div>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link"><button class="btn bg-dark text-white">Create</button></a>
+				</li>
+			</ul>
+			<form class="form-inline my-2 my-lg-0">
+				<input class="same form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+			</form>
+			<div class="p-r mt-lg-0 mt-3 d-flex align-items-center">
+				<i class="fas fa-bell rotat"></i>
+				<span class="badge badge-danger sett">9</span>
+				<i class="mx-3 fas fa-question-circle"></i>
+				<i class="fal fa-cog mr-3"></i>
+				<div class="bg-yellow">QS</div>
+			</div>
+		</div>
+	</nav>
+	<div id="mySidenav" class="sidebar bg-light bd-right float-left">
+		<a href="javascript:void(0)" class="float-right mr-4 closebtn text-dark" onclick="closeNav()">&times;</a>
+		<div class="text-muted mt-3 mx-3"><small>MENU</small></div>
+		<ul class="mt-3 mx-3">
+			<li class="mb-2 p-2 active">
+				<a href="dashboard.html"><i class="fas fa-columns mr-3"></i><span>Dashboard</span></a>
+			</li>
+			<li class="mb-2 p-2">
+				<a href="calender.html"><i class="fas fa-calendar-alt mr-3"></i><span>Calender</span></a>
+			</li>
+			<li class="mb-2 p-2">
+				<a href="chat.html"><i class="far fa-comment mr-3"></i><span>Chat</span></a>
+			</li>
+			
+			<li class="mb-2 p-2 ecomop">
+				<i class="fas fa-cash-register mr-3"></i><span>Ecommerce</span><i class="fas fa-caret-down float-right"></i>
+			</li>
+			<ul class=" sub bg-white rounded ecomcl" style="display: none;">
+				<li class="py-1 pl-5"><a href="product.html">Products</a></li>
+				<li class="py-1 pl-5"><a href="detail.html">Product Detail</a></li>
+				<li class="py-1 pl-5"><a href="order.html">Orders</a></li>
+				<li class="py-1 pl-5"><a href="customer.html">Customers</a></li>
+				<li class="py-1 pl-5"><a href="cart.html">Cart</a></li>
+				<li class="py-1 pl-5"><a href="checkout.html">Checkout</a></li>
+				<li class="py-1 pl-5"><a href="shop.html">Shops</a></li>
+				<li class="py-1 pl-5"><a href="add-product.html">Add Product</a></li>
+			</ul>
+			<li class="mb-2 p-2 closed">
+				<i class="fas fa-envelope mr-3"></i><span>Email</span><i class="fas fa-caret-down float-right"></i>
+			</li>
+			<ul class=" sub bg-white rounded opened" style="display: none;">
+				<li class="py-1 pl-5"><a href="inbox.html">Inbox</a></li>
+				<li class="py-1 pl-5"><a href="read.html">Read Email</a></li>
+			</ul>
+			<li class="mb-2 p-2">
+				<i class="fas fa-hashtag mr-3"></i><span><a href="kanban.html">Kanban</a></span>
+			</li>
+			<div class="text-muted mt-3 mx-3"><small>PAGES</small></div>
+
+			<li class="mb-2 p-2 press">
+				<i class="fas fa-user mr-3"></i><span>Authentication</span><i class="fas fa-caret-down float-right"></i>
+			</li>
+			<ul class=" sub bg-white rounded open" style="display: none;">
+				<li class="py-1 pl-5"><a href="login.html">Login</a></li>
+				<li class="py-1 pl-5"><a href="register.html">Register</a></li>
+				<li class="py-1 pl-5"><a href="recover.html">Recover Password</a></li>
+				<li class="py-1 pl-5"><a href="lock.html">Lock Screen</a></li>
+			</ul>	
+			<li class="mb-2 p-2 utilc">
+				<i class="fas fa-id-card mr-3"></i><span>Utility</span><i class="fas fa-caret-down float-right"></i>
+			</li>
+			<ul class=" sub bg-white rounded utilo" style="display: none;">
+				<li class="py-1 pl-5"><a href="star.html">Starter Page</a></li>
+				<li class="py-1 pl-5"><a href="maintainance.html">Maintaiance</a></li>
+				<li class="py-1 pl-5"><a href="coming.html">Coming Soon</a></li>
+				<li class="py-1 pl-5"><a href=".html">Timeline</a></li>
+				<li class="py-1 pl-5"><a href="faqs.html">FAQs</a></li>
+				<li class="py-1 pl-5"><a href="pricing.html">Pricing</a></li>
+				<li class="py-1 pl-5"><a href="error.html">Error 404</a></li>
+				<li class="py-1 pl-5"><a href="errors.html">Error 500</a></li>
+			</ul>	
+			<div class="text-muted mt-3 mx-3"><small>COMPONENTS</small></div>
+			<li class="mb-2 p-2 elementc">
+				<i class="fad fa-pencil-ruler mr-3"></i><span class="">UI Elements</span><i class="fas fa-caret-down float-right"></i>
+			</li>
+			<ul class="elemento sub bg-white rounded" style="display: none;">
+				<li class="py-1 pl-5"><a href="alert.html">Alerts</a></li>
+				<li class="py-1 pl-5"><a href="button.html">Buttons</a></li>
+				<li class="py-1 pl-5"><a href="card.html">Cards</a></li>
+				<li class="py-1 pl-5"><a href="carousel.html">Carousel</a></li>
+				<li class="py-1 pl-5"><a href="grid.html">Grid</a></li>
+				<li class="py-1 pl-5"><a href="image.html">Images</a></li>
+				<li class="py-1 pl-5"><a href=".html">LightBox</a></li>
+				<li class="py-1 pl-5"><a href=".html">Modals</a></li>
+				<li class="py-1 pl-5"><a href=".html">Range Slider</a></li>
+				<li class="py-1 pl-5"><a href=".html">Round Slider</a></li>
+				<li class="py-1 pl-5"><a href=".html">Session Timeout</a></li>
+				<li class="py-1 pl-5"><a href=".html">Progress Bars</a></li>
+				<li class="py-1 pl-5"><a href=".html">Sweet Alerts</a></li>
+				<li class="py-1 pl-5"><a href=".html">Tabs & Accordian</a></li>
+				<li class="py-1 pl-5"><a href=".html">Typography</a></li>
+				<li class="py-1 pl-5"><a href=".html">Video</a></li>
+				<li class="py-1 pl-5"><a href=".html">General</a></li>
+				<li class="py-1 pl-5"><a href=".html">Rating</a></li>
+				<li class="py-1 pl-5"><a href=".html">Notification</a></li>
+			</ul>
+			<li class="mb-2 p-2 formcl">
+				<i class="fas fa-eraser mr-3"></i><span class="">Forms</span><span class="badge badge-pill badge-danger float-right mt-1">6</span>
+			</li>
+			<ul class="formop sub bg-white rounded" style="display: none;">
+				<li class="py-1 pl-5"><a href="element.html">Form Elements</a></li>
+				<li class="py-1 pl-5"><a href="validation.html">Form Validation</a></li>
+				<li class="py-1 pl-5"><a href=".html">Form Advance Plugin</a></li>
+				<li class="py-1 pl-5"><a href="editor.html">Form Editor</a></li>
+				<li class="py-1 pl-5"><a href="form-upload.html">Form File Upload</a></li>
+				<li class="py-1 pl-5"><a href="form-edit.html">Form X-editabe</a></li>
+				<li class="py-1 pl-5"><a href="wizard.html">Form Wizard</a></li>
+				<li class="py-1 pl-5"><a href="mask.html">Form Mask</a></li>
+			</ul>
+			<li class="mb-2 p-2 hidden">
+				<i class="fas fa-table mr-3"></i><span class="">Tabels</span><i class="fas fa-caret-down float-right"></i>
+			</li>
+			<ul class="showed sub bg-white rounded" style="display: none;">
+				<li class="py-1 pl-5"><a href="table.html">Basic Table</a></li>
+				<li class="py-1 pl-5"><a href="data.html">Data Table</a></li>
+				<li class="py-1 pl-5"><a href="responsive.html">Responsive Table</a></li>
+				<li class="py-1 pl-5"><a href="edit.html">Editable Table</a></li>
+			</ul>
+			<li class="mb-2 p-2 chartcl">
+				<i class="fas fa-chart-bar mr-3"></i><span class="">Charts</span><i class="fas fa-caret-down float-right"></i>
+			</li>
+			<ul class="chartop sub bg-white rounded" style="display: none;">
+				<li class="py-1 pl-5"><a href="apex.html">Apex Charts</a></li>
+				<li class="py-1 pl-5"><a href="chartjs.html">Chartjs</a></li>
+				<li class="py-1 pl-5"><a href="">Jquery Knob</a></li>
+				<li class="py-1 pl-5"><a href="line-chart.html ">Sparkline</a></li>
+			</ul>
+			<li class="mb-2 p-2 iconcl">
+				<i class="fas fa-paint-brush-alt mr-3"></i><span class="">Icons</span><i class="fas fa-caret-down float-right"></i>
+			</li>
+			<ul class="iconop sub bg-white rounded" style="display: none;">
+				<li class="py-1 pl-5"><a href=".html">Remix Icons</a></li>
+				<li class="py-1 pl-5"><a href=".html">Material Design</a></li>
+				<li class="py-1 pl-5"><a href=".html">Dripicons</a></li>
+				<li class="py-1 pl-5"><a href=".html">Font awesome 5</a></li>
+			</ul>
+			<li class="mb-2 p-2 ok">
+				<i class="far fa-map-marker-alt mr-3"></i><span class="">Maps</span><i class="fas fa-caret-down float-right"></i>
+			</li>
+			<ul class="shed sub bg-white rounded" style="display: none;">
+				<li class="py-1 pl-5"><a href="google.html">Google Map</a></li>
+				<li class="py-1 pl-5"><a href="vector.html">Vector Map</a></li>
+			</ul>
+			<li class="mb-2 p-2 multcl">
+				<i class="fas fa-share-alt mr-3"></i><span class="">MultiLevel</span><i class="fas fa-caret-down float-right"></i>
+			</li>
+			<ul class="multop sub bg-white rounded" style="display: none;">
+				<li class="py-1 pl-5"><a href="level1.html">Level 1.1</a></li>
+				<li class="mb-2 py-2 levelop">
+					<span class="pl-5">Level 1.2</span><i class="fas fa-caret-down float-right mr-2"></i>
+				</li>
+				<ul class="levelcl sub bg-white rounded ml-3" style="display: none;">
+					<li class="py-1 pl-5"><a href="level2.html">Level 2.1</a></li>
+					<li class="py-1 pl-5"><a href="level3.html">Level 2.2</a></li>
+				</ul>
+			</ul>
+		</ul>
+	</div>
+	<div class="container-fluid px-0">
+		<div class="row">
+			<div class="col-md-12 bg-grey pb-3 px-3">
+				<div class="row my-3">
+					<div class="col-md-12 d-flex justify-content-between">
+						<h5 class="text-dark f-16">CARDS</h5>
+						<div class="d-flex align-items-center">
+							<span>UI Elemetns</span> <i class="mt-1 mx-2 far fa-angle-right"></i> <span>Cards</span>
+						</div>
+					</div>
+				</div>
+				<div class="row mt-3 pb-4">
+					<div class="col-xl-3">
+						<div class="card">
+							<img src="assets/images/img-1.3c3a56e7.jpg" alt="Skote" class="img-fluid card-img-top">
+							<div class="card-body">
+								<div class="h4 card-title">Card title</div>
+								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+								<a class="btn btn-primary" href="#">Button</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-3">
+						<div class="card">
+							<img src="assets/images/img-2.35f5f93f.jpg" alt="Skote" class="img-fluid card-img-top">
+							<div class="card-body">
+								<div class="h4 card-title">Card title</div>
+								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+							</div>
+							<ul class="list-group list-group-flush border-bottom-0">
+								<li class="list-group-item">Cras justo odio</li>
+								<li class="list-group-item">Dapibus ac facilisis in</li>
+							</ul>
+							<div class="card-body border-top-0">
+								<a class="card-link" href="#">Card link</a>
+								<a class="card-link" href="#">Another link</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-3">
+						<div class="card">
+							<img src="assets/images/img-3.35b08eec.jpg" alt="Skote" class="img-fluid card-img-top">
+							<div class="card-body">
+								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 col-xl-3">
+						<div class="card">
+							<div class="card-body">
+								<div class="h4 card-title">Card title</div>
+								<div class="font-14 text-muted card-subtitle">Support card subtitle</div>
+							</div>
+							<img src="assets/images/img-4.4c5e6188.jpg" alt="Skote" class="img-fluid card-img">
+							<div class="card-body">
+								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+								<a class="card-link" href="#">Card link</a>
+								<a class="card-link" href="#">Another link</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row pb-4">
+					<div class="col-md-6">
+						<div class="card card-body">
+							<div class="h4 card-title">Special title treatment</div>
+							<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+							<a class="btn btn-primary" href="#">Go somewhere</a>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="card card-body">
+							<div class="h4 card-title">Special title treatment</div>
+							<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+							<a class="btn btn-primary" href="#">Go somewhere</a>
+						</div>
+					</div>
+				</div>
+				<div class="row pb-4">
+					<div class="col-lg-4">
+						<div class="card card-body">
+							<div class="h4 card-title">Special title treatment</div>
+							<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+							<a class="btn btn-primary waves-effect waves-light" href="/ui-cards">Go somewhere</a>
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="text-center card card-body">
+							<div class="h4 card-title">Special title treatment</div>
+							<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+							<a class="btn btn-primary" href="#">Go somewhere</a>
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="text-end card card-body">
+							<div class="h4 card-title">Special title treatment</div>
+							<p class="card-text">With supporting text below as a natural lead-in to additional content.</p><a class="btn btn-primary" href="/ui-cards">Go somewhere</a>
+						</div>
+					</div>
+				</div>
+				<div class="row pb-4">
+					<div class="col-lg-4">
+						<div class="card">
+							<div class="h5 card-header">Featured</div>
+							<div class="card-body">
+								<div class="h4 card-title">Special title treatment</div><p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+								<a class="btn btn-primary" href="#">Go somewhere</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="card">
+							<div class="card-header">Quote</div>
+							<div class="card-body">
+								<blockquote class="card-blockquote mb-0">
+									<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+									<footer class="blockquote-footer font-size-12 m-0">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+								</blockquote>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="card">
+							<div class="card-header">Featured</div>
+							<div class="card-body">
+								<div class="h4 card-title">Special title treatment</div>
+								<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+								<a class="btn btn-primary" href="#">Go somewhere</a>
+							</div>
+							<div class="text-muted card-footer">2 days ago</div>
+						</div>
+					</div>
+				</div>
+				<div class="row pb-4">
+					<div class="col-lg-4">
+						<div class="card">
+							<img src="assets/images/img-5.5ca7e93c.jpg" alt="Skote" class="img-fluid card-img-top">
+							<div class="card-body">
+								<div class="h4 card-title">Card title</div>
+								<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+								<p class="card-text">
+									<small class="text-muted">Last updated 3 mins ago</small>
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="card">
+							<div class="card-body">
+								<div class="h4 card-title">Card title</div>
+								<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+								<p class="card-text">
+									<small class="text-muted">Last updated 3 mins ago</small>
+								</p>
+							</div>
+							<img src="assets/images/img-7.ffcc739f.jpg" alt="Skote" class="img-fluid card-img-bottom">
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="card">
+							<img src="assets/images/img-6.f60eea40.jpg" alt="Skote" class="img-fluid card-img">
+							<div class="card-img-overlay">
+								<div class="text-white mt-0 card-title">Card title</div>
+								<p class="text-light card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+								<p class="card-text"><small class="text-white">Last updated 3 mins ago</small></p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row pb-4">
+					<div class="col-lg-6">
+						<div class="card">
+							<div class="align-items-center row">
+								<div class="col-md-4">
+									<img src="assets/images/img-2.35f5f93f.jpg" alt="Skote" class="img-fluid card-img">
+								</div>
+								<div class="col-md-8">
+									<div class="card-body">
+										<div class="card-title">Card title</div>
+										<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+										<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-6">
+						<div class="card">
+							<div class="align-items-center row">
+								<div class="col-md-8">
+									<div class="card-body">
+										<div class="card-title">Card title</div>
+
+										<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.</p><p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+									</div>
+								</div>
+
+								<div class="col-md-4">
+									<img src="assets/images/img-3.35b08eec.jpg" alt="Skote" class="img-fluid card-img">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row pb-4">
+					<div class="col-lg-4">
+						<div class="text-white card bg-primary">
+							<div class="card-body">
+								<div class="mb-4 text-white card-title">
+									<i class="fal fa-bullseye-arrow mr-3"></i> Primary Card
+								</div>
+								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="text-white card bg-success">
+							<div class="card-body">
+								<div class="mb-4 text-white card-title">
+									<i class="fal fa-check-double mr-3"></i> Success Card
+								</div>
+								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="text-white card bg-info">
+							<div class="card-body">
+								<div class="mb-4 text-white card-title"><i class="fal fa-exclamation-circle mr-3"></i>Info Card
+								</div>
+								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row pb-4">
+					<div class="col-lg-4">
+						<div class="text-white card bg-warning">
+							<div class="card-body">
+								<div class="mb-4 text-white card-title"><i class="fal fa-exclamation-triangle mr-3"></i>Warning Card
+								</div>
+								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="text-white card bg-danger">
+							<div class="card-body">
+								<div class="mb-4 text-white card-title"><i class="fal fa-ban mr-3"></i>Danger Card
+								</div>
+								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="text-light card bg-dark">
+							<div class="card-body">
+								<div class="mb-4 text-white card-title">
+									<i class="fal fa-exclamation-circle mr-3"></i>Dark Card
+								</div>
+								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row pb-4">
+					<div class="col-lg-4">
+						<div class="border card border-primary">
+							<div class="bg-transparent card-header border-bottom-0">
+								<h5 class="my-0 text-primary"><i class="fal fa-bullseye-arrow mr-3"></i> Primary outline Card</h5>
+							</div>
+							<div class="card-body">
+								<div class="h4 card-title">card title</div>
+								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="border card border-danger">
+							<div class="bg-transparent card-header border-bottom-0">
+								<h5 class="my-0 text-danger"><i class="fal fa-ban mr-3"></i>Danger outline Card</h5>
+							</div>
+							<div class="card-body">
+								<div class="h4 card-title">card title</div>
+								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="border card border-success">
+							<div class="bg-transparent card-header border-bottom-0">
+								<h5 class="my-0 text-success">
+									<i class="fal fa-check-double mr-3"></i>Success Card
+								</h5>
+							</div>
+							<div class="card-body">
+								<div class="h4 card-title">card title</div>
+								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="mb-4 col-12">
+						<h4 class="my-3">Card Groups</h4>
+						<div class="card-group">
+							<div class="card">
+								<img src="assets/images/img-4.4c5e6188.jpg" alt="Skote" class="img-fluid card-img-top">
+								<div class="card-body">
+									<div class="h4 card-title">Card title</div>
+									<p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+									<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+								</div>
+							</div>
+							<div class="card">
+								<img src="assets/images/img-5.5ca7e93c.jpg" alt="Skote" class="img-fluid card-img-top">
+								<div class="card-body">
+									<div class="h4 card-title">Card title</div>
+									<p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+									<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+								</div>
+							</div>
+							<div class="card"><img src="assets/images/img-6.f60eea40.jpg" alt="Skote" class="img-fluid card-img-top">
+								<div class="card-body">
+									<div class="h4 card-title">Card title</div>
+									<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+									<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row pb-4">
+					<div class="col-sm-12">
+						<h4 class="my-3">Cards Columns</h4>
+						<div class="card-columns">
+							<div class="card">
+								<img src="assets/images/img-3.35b08eec.jpg" alt="Skote" class="card-img-top">
+								<div class="card-body">
+									<div class="card-title">Card title that wraps to a new line</div>
+									<p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+								</div>
+							</div>
+							<div class="card">
+								<div class="card-body">
+									<blockquote class="card-blockquote mb-0">
+										<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+										<footer class="blockquote-footer font-size-12">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+									</blockquote>
+								</div>
+							</div>
+							<div class="card">
+								<img src="assets/images/img-5.5ca7e93c.jpg" alt="Skote" class="card-img-top">
+								<div class="card-body">
+									<div class="card-title">Card title</div>
+									<p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+									<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+								</div>
+							</div>
+							<div class="text-white text-center p-3 card bg-primary">
+								<blockquote class="card-blockquote mb-0">
+									<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat.</p><footer class="blockquote-footer text-white font-size-12">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+								</blockquote>
+							</div>
+							<div class="text-center card">
+								<div class="card-body">
+									<div class="card-title">Card title</div>
+									<p class="card-text">This card has a regular title and short paragraphy of text below it.</p>
+									<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+								</div>
+							</div>
+							<div class="card">
+								<img src="assets/images/img-7.ffcc739f.jpg" alt="Skote" class="card-img-top">
+							</div>
+							<div class="p-3 text-right card">
+								<blockquote class="blockquote mb-0">
+									<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p><footer class="blockquote-footer"><small class="text-muted">Someone famous in <cite title="Source Title">Source Title</cite></small></footer>
+								</blockquote>
+							</div>
+							<div class="card">
+								<div class="card-body">
+									<div class="card-title">Card title</div>
+									<p class="card-text">This is another card with title and supporting text below. This card has some additional content to make it slightly taller overall.</p>
+									<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$(".hidden").click(function(){
+				$(".showed").toggle();
+			});
+		});
+		$(document).ready(function(){
+			$(".press").click(function(){
+				$(".open").toggle();
+			});
+		});
+		$(document).ready(function(){
+			$(".ok").click(function(){
+				$(".shed").toggle();
+			});
+		});
+		$(document).ready(function(){
+			$(".closed").click(function(){
+				$(".opened").toggle();
+			});
+		});
+		$(document).ready(function(){
+			$(".chartcl").click(function(){
+				$(".chartop").toggle();
+			});
+		});
+		$(document).ready(function(){
+			$(".utilc").click(function(){
+				$(".utilo").toggle();
+			});
+		});
+		$(document).ready(function(){
+			$(".elementc").click(function(){
+				$(".elemento").toggle();
+			});
+		});
+		$(document).ready(function(){
+			$(".iconcl").click(function(){
+				$(".iconop").toggle();
+			});
+		});
+		$(document).ready(function(){
+			$(".multcl").click(function(){
+				$(".multop").toggle();
+			});
+		});
+		$(document).ready(function(){
+			$(".formcl").click(function(){
+				$(".formop").toggle();
+			});
+		});
+	</script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$(".ecomop").click(function(){
+				$(".ecomcl").toggle();
+			})
+		});
+	</script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$(".levelop").click(function(){
+				$(".levelcl").toggle();
+			})
+		});
+	</script>
+	<script>
+		function openNav() {
+			document.getElementById("mySidenav").style.width = "250px";
+			document.getElementById("mySidenav").style.marginTop = "0px";
+
+		}
+
+		function closeNav() {
+			document.getElementById("mySidenav").style.width = "0";
+		}
+	</script>
+</body>
+</html>

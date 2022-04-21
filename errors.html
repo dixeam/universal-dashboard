@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Dashboard</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+	<link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400;1,500&family=Open+Sans:wght@500;600;700&family=Poppins:wght@200;300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="bg-grey h-10">
+		<div>
+			<h1 class="fw-bold text-error">5 <span class="error-text">0<img src="assets/images/man.png" alt="" class="error-img"></span> 5</h1>
+		</div>
+		<h3 class="text-uppercase">Sorry, page not found</h3>
+		<button class="btn btn-blue mt-4">Back to Dashboard</button>	
+	</div>
+
+
+
+
+
+
+
+
+
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$(".hidden").click(function(){
+				$(".showed").toggle();
+			});
+		});
+		$(document).ready(function(){
+			$(".press").click(function(){
+				$(".open").toggle();
+			});
+		});
+		$(document).ready(function(){
+			$(".ok").click(function(){
+				$(".shed").toggle();
+			});
+		});
+		$(document).ready(function(){
+			$(".closed").click(function(){
+				$(".opened").toggle();
+			});
+		});
+		$(document).ready(function(){
+			$(".chartcl").click(function(){
+				$(".chartop").toggle();
+			});
+		});
+		$(document).ready(function(){
+			$(".utilc").click(function(){
+				$(".utilo").toggle();
+			});
+		});
+		$(document).ready(function(){
+			$(".elementc").click(function(){
+				$(".elemento").toggle();
+			});
+		});
+		$(document).ready(function(){
+			$(".iconcl").click(function(){
+				$(".iconop").toggle();
+			});
+		});
+		$(document).ready(function(){
+			$(".multcl").click(function(){
+				$(".multop").toggle();
+			});
+		});
+		$(document).ready(function(){
+			$(".formcl").click(function(){
+				$(".formop").toggle();
+			});
+		});
+	</script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$(".ecomop").click(function(){
+				$(".ecomcl").toggle();
+			})
+		});
+	</script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$(".levelop").click(function(){
+				$(".levelcl").toggle();
+			})
+		});
+	</script>
+	<script>
+		function openNav() {
+			document.getElementById("mySidenav").style.width = "250px";
+			document.getElementById("mySidenav").style.marginTop = "0px";
+
+		}
+
+		function closeNav() {
+			document.getElementById("mySidenav").style.width = "0";
+		}
+	</script>
+</body>
+</html>

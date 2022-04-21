@@ -39,6 +39,10 @@ body,p,a,ul li,span,h4,h5,label{
 .text-blue{
 	color: #5664D2 !important;
 }
+.bg-new{
+	background-color: #5664D2 !important;
+}
+
 .text-pink{
 	color: #e83e8c;
 }
@@ -1511,8 +1515,113 @@ a {
 }
 /*Buttons Ended*/
 
+/*Pricing Started*/
+.new .nav-item .nav-link.active, .nav-pills .show>.nav-link {
+	background-color: #5664d2;
+	color: white !important;
+}
+.apply{
+	width: fit-content;
+	margin: 0px auto !important;
+}
+.f-25{
+	font-size: 25px;
+}
+.f-21{
+	font-size: 21px;
+}
+/*Pricing Ended*/
 
 
 
 
+/*Error Started*/
+.h-10{
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.text-error {
+	font-size: 120px;
+}
+.fw-bold {
+	font-weight: 700!important;
+}
+.error-text {
+	color: #ff3d60;
+	position: relative;
+}
+.error-text .error-img {
+	position: absolute;
+	width: 116px;
+	left: -22px;
+	right: 0;
+	bottom: 47px;
+}
+.text-uppercase {
+	text-transform: uppercase!important;
+}
+/*Error Ended*/
+
+
+/*Knob Started*/
+
+
+
+/*Knob Ended*/
+
+
+
+/*Carasoule Started*/
+.breadcrumb {
+	list-style: none;
+	background-color: #f1f5f7!important;
+}
+a, button {
+	outline: none!important;
+}
+a {
+	text-decoration: none!important;
+}
+.card-title-desc {
+	color: #74788d;
+	margin-bottom: 24px;
+}
+.text-new{
+	color: #505D69;
+}
+/*Carasoule Ended*/
+
+
+/*Images Started*/
+.avatar-xl {
+	height: 7.5rem;
+	width: 7.5rem;
+}
+.border-4 {
+	border: 4px solid #dee2e6!important;
+}
+.avatar-sm {
+	height: 3rem;
+	width: 3rem;
+}
+.avatar-md {
+	height: 4.5rem;
+	width: 4.5rem;
+}
+.avatar-lg {
+	height: 6rem;
+	width: 6rem;
+}
+/*Images Ended*/
+
+
+
+/*Progress Started*/
+.h-11{
+	height: 0.625rem !important;
+}
+/*Progress Ended*/
 
