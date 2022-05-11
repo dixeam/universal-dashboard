@@ -44,7 +44,7 @@ body,p,a,ul li,span,h4,h5,label{
 }
 
 .text-pink{
-	color: #e83e8c;
+	/*color: #e83e8c !important;*/
 }
 .bg-pink{
 	background-color: #e83e8c;
@@ -399,7 +399,7 @@ body,p,a,ul li,span,h4,h5,label{
 	text-decoration: none;
 }
 .text-pink{
-	color: #ff3d60;
+	color: #ff3d60 !important;
 }
 .sub-label{
 	height: 13px;
@@ -2295,5 +2295,14 @@ img, svg {
 .mb-t-0{
 	margin-bottom: 0px !important;
 }
+.new-span{
+	display: inline-block;
+	border-radius: 50%;
+	border: 5px double white;
+	width: 30px;
+	height: 30px;
+	background-color: rgb(204, 204, 204);
+}
+
 /*Rating Ended*/
 
