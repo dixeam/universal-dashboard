@@ -12,7 +12,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400;1,500&family=Open+Sans:wght@500;600;700&family=Poppins:wght@200;300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-	<nav class="navbar navbar-expand-lg navbar-light bd-bt py-0">
+	<nav class="navbar navbar-expand-lg navbar-light bd-bt py-2">
 		<a class="navbar-brand d-flex" href="#"><i class="fas fa-bars" id="mbso" onclick="openNav()"></i><i class="far fa-cloud-upload-alt text-primary ml-3 mr-4"></i><div class="f-12">nclouds JIRA</div></a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
@@ -106,7 +106,7 @@
 		<a href="javascript:void(0)" class="float-right mr-4 closebtn text-dark" onclick="closeNav()">&times;</a>
 		<div class="text-muted mt-3 mx-3"><small>MENU</small></div>
 		<ul class="mt-3 mx-3">
-			<li class="mb-2 p-2 active">
+			<li class="mb-2 p-2">
 				<a href="dashboard.html"><i class="fas fa-columns mr-3"></i><span>Dashboard</span></a>
 			</li>
 			<li class="mb-2 p-2">
@@ -115,14 +115,29 @@
 			<li class="mb-2 p-2">
 				<a href="chat.html"><i class="far fa-comment mr-3"></i><span>Chat</span></a>
 			</li>
-			<li class="mb-2 p-2">
-				<i class="fas fa-cash-register mr-3"></i><span>Ecommerce</span>
+			
+			<li class="mb-2 p-2 ecomop">
+				<i class="fas fa-cash-register mr-3"></i><span>Ecommerce</span><i class="fas fa-caret-down float-right"></i>
 			</li>
-			<li class="mb-2 p-2">
-				<i class="fas fa-envelope mr-3"></i><span>Email</span>
+			<ul class=" sub bg-white rounded ecomcl" style="display: none;">
+				<li class="py-1 pl-5"><a href="product.html">Products</a></li>
+				<li class="py-1 pl-5"><a href="detail.html">Product Detail</a></li>
+				<li class="py-1 pl-5"><a href="order.html">Orders</a></li>
+				<li class="py-1 pl-5"><a href="customer.html">Customers</a></li>
+				<li class="py-1 pl-5"><a href="cart.html">Cart</a></li>
+				<li class="py-1 pl-5"><a href="checkout.html">Checkout</a></li>
+				<li class="py-1 pl-5"><a href="shop.html">Shops</a></li>
+				<li class="py-1 pl-5"><a href="add-product.html">Add Product</a></li>
+			</ul>
+			<li class="mb-2 p-2 closed">
+				<i class="fas fa-envelope mr-3"></i><span>Email</span><i class="fas fa-caret-down float-right"></i>
 			</li>
+			<ul class=" sub bg-white rounded opened" style="display: none;">
+				<li class="py-1 pl-5"><a href="inbox.html">Inbox</a></li>
+				<li class="py-1 pl-5"><a href="read.html">Read Email</a></li>
+			</ul>
 			<li class="mb-2 p-2">
-				<i class="fas fa-hashtag mr-3"></i><span>Kanban</span>
+				<i class="fas fa-hashtag mr-3"></i><span><a href="kanban.html">Kanban</a></span>
 			</li>
 			<div class="text-muted mt-3 mx-3"><small>PAGES</small></div>
 
@@ -135,6 +150,58 @@
 				<li class="py-1 pl-5"><a href="recover.html">Recover Password</a></li>
 				<li class="py-1 pl-5"><a href="lock.html">Lock Screen</a></li>
 			</ul>	
+			<li class="mb-2 p-2 utilc">
+				<i class="fas fa-id-card mr-3"></i><span>Utility</span><i class="fas fa-caret-down float-right"></i>
+			</li>
+			<ul class=" sub bg-white rounded utilo" style="display: none;">
+				<li class="py-1 pl-5"><a href="star.html">Starter Page</a></li>
+				<li class="py-1 pl-5"><a href="maintainance.html">Maintaiance</a></li>
+				<li class="py-1 pl-5"><a href="coming.html">Coming Soon</a></li>
+				<li class="py-1 pl-5"><a href="timeline.html">Timeline</a></li>
+				<li class="py-1 pl-5"><a href="faqs.html">FAQs</a></li>
+				<li class="py-1 pl-5"><a href="pricing.html">Pricing</a></li>
+				<li class="py-1 pl-5"><a href="error.html">Error 404</a></li>
+				<li class="py-1 pl-5"><a href="errors.html">Error 500</a></li>
+			</ul>	
+			<div class="text-muted mt-3 mx-3"><small>COMPONENTS</small></div>
+			<li class="mb-2 p-2 elementc">
+				<i class="fad fa-pencil-ruler mr-3"></i><span class="">UI Elements</span><i class="fas fa-caret-down float-right"></i>
+			</li>
+			<ul class="elemento sub bg-white rounded" style="display: none;">
+				<li class="py-1 pl-5"><a href="alert.html">Alerts</a></li>
+				<li class="py-1 pl-5"><a href="button.html">Buttons</a></li>
+				<li class="py-1 pl-5"><a href="card.html">Cards</a></li>
+				<li class="py-1 pl-5"><a href="carousel.html">Carousel</a></li>
+				<li class="py-1 pl-5"><a href="dropdown.html">Dropdown</a></li>
+				<li class="py-1 pl-5"><a href="grid.html">Grid</a></li>
+				<li class="py-1 pl-5"><a href="image.html">Images</a></li>
+				<li class="py-1 pl-5"><a href="lightbox.html">LightBox</a></li>
+				<li class="py-1 pl-5"><a href="modal.html">Modals</a></li>
+				<li class="py-1 pl-5"><a href="range-slider.html">Range Slider</a></li>
+				<li class="py-1 pl-5"><a href="round-slide.html">Round Slider</a></li>
+				<li class="py-1 pl-5"><a href="session.html">Session Timeout</a></li>
+				<li class="py-1 pl-5"><a href="progress.html">Progress Bars</a></li>
+				<li class="py-1 pl-5"><a href="sweet.html">Sweet Alerts</a></li>
+				<li class="py-1 pl-5"><a href="tabs.html">Tabs & Accordian</a></li>
+				<li class="py-1 pl-5"><a href="typography.html">Typography</a></li>
+				<li class="py-1 pl-5"><a href="video.html">Video</a></li>
+				<li class="py-1 pl-5"><a href="general.html">General</a></li>
+				<li class="py-1 pl-5"><a href="rating.html">Rating</a></li>
+				<li class="py-1 pl-5"><a href="notification.html">Notification</a></li>
+			</ul>
+			<li class="mb-2 p-2 formcl">
+				<i class="fas fa-eraser mr-3"></i><span class="">Forms</span><span class="badge badge-pill badge-danger float-right mt-1">6</span>
+			</li>
+			<ul class="formop sub bg-white rounded" style="display: none;">
+				<li class="py-1 pl-5"><a href="element.html">Form Elements</a></li>
+				<li class="py-1 pl-5"><a href="validation.html">Form Validation</a></li>
+				<li class="py-1 pl-5"><a href="advance.html">Form Advance Plugin</a></li>
+				<li class="py-1 pl-5"><a href="editor.html">Form Editor</a></li>
+				<li class="py-1 pl-5"><a href="form-upload.html">Form File Upload</a></li>
+				<li class="py-1 pl-5"><a href="form-edit.html">Form X-editabe</a></li>
+				<li class="py-1 pl-5"><a href="wizard.html">Form Wizard</a></li>
+				<li class="py-1 pl-5"><a href="mask.html">Form Mask</a></li>
+			</ul>
 			<li class="mb-2 p-2 hidden">
 				<i class="fas fa-table mr-3"></i><span class="">Tabels</span><i class="fas fa-caret-down float-right"></i>
 			</li>
@@ -144,23 +211,54 @@
 				<li class="py-1 pl-5"><a href="responsive.html">Responsive Table</a></li>
 				<li class="py-1 pl-5"><a href="edit.html">Editable Table</a></li>
 			</ul>
+			<li class="mb-2 p-2 chartcl">
+				<i class="fas fa-chart-bar mr-3"></i><span class="">Charts</span><i class="fas fa-caret-down float-right"></i>
+			</li>
+			<ul class="chartop sub bg-white rounded" style="display: none;">
+				<li class="py-1 pl-5"><a href="apex.html">Apex Charts</a></li>
+				<li class="py-1 pl-5"><a href="chartjs.html">Chartjs</a></li>
+				<li class="py-1 pl-5"><a href="knob.html">Jquery Knob</a></li>
+				<li class="py-1 pl-5"><a href="line-chart.html ">Sparkline</a></li>
+			</ul>
+			<li class="mb-2 p-2 iconcl">
+				<i class="fas fa-paint-brush-alt mr-3"></i><span class="">Icons</span><i class="fas fa-caret-down float-right"></i>
+			</li>
+			<ul class="iconop sub bg-white rounded" style="display: none;">
+				<li class="py-1 pl-5"><a href="remix.html">Remix Icons</a></li>
+				<li class="py-1 pl-5"><a href="matrerial.html">Material Design</a></li>
+				<li class="py-1 pl-5"><a href="dripic.html">Dripicons</a></li>
+				<li class="py-1 pl-5"><a href="font-awe.html">Font awesome 5</a></li>
+			</ul>
 			<li class="mb-2 p-2 ok">
 				<i class="far fa-map-marker-alt mr-3"></i><span class="">Maps</span><i class="fas fa-caret-down float-right"></i>
 			</li>
-			<ul class="shed sub bg-white rounded">
+			<ul class="shed sub bg-white rounded" style="">
 				<li class="py-1 pl-5 active"><a href="google.html">Google Map</a></li>
 				<li class="py-1 pl-5"><a href="vector.html">Vector Map</a></li>
+			</ul>
+			<li class="mb-2 p-2 multcl">
+				<i class="fas fa-share-alt mr-3"></i><span class="">MultiLevel</span><i class="fas fa-caret-down float-right"></i>
+			</li>
+			<ul class="multop sub bg-white rounded" style="display: none;">
+				<li class="py-1 pl-5"><a href="level1.html">Level 1.1</a></li>
+				<li class="mb-2 py-2 levelop">
+					<span class="pl-5">Level 1.2</span><i class="fas fa-caret-down float-right mr-2"></i>
+				</li>
+				<ul class="levelcl sub bg-white rounded ml-3" style="display: none;">
+					<li class="py-1 pl-5"><a href="level2.html">Level 2.1</a></li>
+					<li class="py-1 pl-5"><a href="level3.html">Level 2.2</a></li>
+				</ul>
 			</ul>
 		</ul>
 	</div>
 	<div class="container-fluid px-0">
 		<div class="row">
 			<div class="col-md-12 bg-grey pb-3 px-3">
-				<div class="row mt-2">
+				<div class="row my-3">
 					<div class="col-md-12 d-flex justify-content-between">
-						<h5 class="text-dark f-16 fw-500">GOOGLE MAPS</h5>
-						<div>
-							<span>Charts</span> <i class="far fa-angle-right"></i> <span>Goole Maps</span>
+						<h5 class="text-dark f-16">GOOGLE MAPS</h5>
+						<div class="d-flex align-items-center">
+							<span>Charts</span> <i class="far fa-angle-right mt-1 mx-2"></i> <span>Goole Maps</span>
 						</div>
 					</div>
 				</div>
@@ -229,6 +327,66 @@
 				$(".shed").toggle();
 			});
 		});
+		$(document).ready(function(){
+			$(".closed").click(function(){
+				$(".opened").toggle();
+			});
+		});
+		$(document).ready(function(){
+			$(".chartcl").click(function(){
+				$(".chartop").toggle();
+			});
+		});
+		$(document).ready(function(){
+			$(".utilc").click(function(){
+				$(".utilo").toggle();
+			});
+		});
+		$(document).ready(function(){
+			$(".elementc").click(function(){
+				$(".elemento").toggle();
+			});
+		});
+		$(document).ready(function(){
+			$(".iconcl").click(function(){
+				$(".iconop").toggle();
+			});
+		});
+		$(document).ready(function(){
+			$(".multcl").click(function(){
+				$(".multop").toggle();
+			});
+		});
+		$(document).ready(function(){
+			$(".formcl").click(function(){
+				$(".formop").toggle();
+			});
+		});
+	</script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$(".ecomop").click(function(){
+				$(".ecomcl").toggle();
+			})
+		});
+	</script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$(".levelop").click(function(){
+				$(".levelcl").toggle();
+			})
+		});
+	</script>
+	<script>
+		function openNav() {
+			document.getElementById("mySidenav").style.width = "250px";
+			document.getElementById("mySidenav").style.marginTop = "0px";
+
+		}
+
+		function closeNav() {
+			document.getElementById("mySidenav").style.width = "0";
+		}
 	</script>
 </body>
 </html>

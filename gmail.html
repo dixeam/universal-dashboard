@@ -12,7 +12,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400;1,500&family=Open+Sans:wght@500;600;700&family=Poppins:wght@200;300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-	<nav class="navbar navbar-expand-lg navbar-light bd-bt py-2">
+	<nav class="navbar navbar-expand-lg navbar-light bd-bt py-0">
 		<a class="navbar-brand d-flex" href="#"><i class="fas fa-bars" id="mbso" onclick="openNav()"></i><i class="far fa-cloud-upload-alt text-primary ml-3 mr-4"></i><div class="f-12">nclouds JIRA</div></a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
@@ -119,7 +119,7 @@
 			<li class="mb-2 p-2 ecomop">
 				<i class="fas fa-cash-register mr-3"></i><span>Ecommerce</span><i class="fas fa-caret-down float-right"></i>
 			</li>
-			<ul class=" sub bg-white rounded ecomcl" style="">
+			<ul class=" sub bg-white rounded ecomcl" style="display: none;">
 				<li class="py-1 pl-5"><a href="product.html">Products</a></li>
 				<li class="py-1 pl-5"><a href="detail.html">Product Detail</a></li>
 				<li class="py-1 pl-5"><a href="order.html">Orders</a></li>
@@ -127,13 +127,13 @@
 				<li class="py-1 pl-5"><a href="cart.html">Cart</a></li>
 				<li class="py-1 pl-5"><a href="checkout.html">Checkout</a></li>
 				<li class="py-1 pl-5"><a href="shop.html">Shops</a></li>
-				<li class="py-1 pl-5 active"><a href="add-product.html">Add Product</a></li>
+				<li class="py-1 pl-5"><a href="add-product.html">Add Product</a></li>
 			</ul>
 			<li class="mb-2 p-2 closed">
 				<i class="fas fa-envelope mr-3"></i><span>Email</span><i class="fas fa-caret-down float-right"></i>
 			</li>
-			<ul class=" sub bg-white rounded opened" style="display: none;">
-				<li class="py-1 pl-5"><a href="inbox.html">Inbox</a></li>
+			<ul class=" sub bg-white rounded opened" style="">
+				<li class="py-1 pl-5 active"><a href="inbox.html">Inbox</a></li>
 				<li class="py-1 pl-5"><a href="read.html">Read Email</a></li>
 			</ul>
 			<li class="mb-2 p-2">
@@ -254,150 +254,110 @@
 	<div class="container-fluid px-0">
 		<div class="row">
 			<div class="col-md-12 bg-grey pb-3 px-3">
-				<div class="row my-3">
+				<div class="row mt-2">
 					<div class="col-md-12 d-flex justify-content-between">
-						<h5 class="text-dark f-16">ECOMMERCE</h5>
-						<div class="d-flex align-items-center">
-							<span>Ecommerce</span> <i class="mt-1 mx-2 far fa-angle-right"></i> <span>Add Product</span>
+						<h5 class="text-dark f-16 fw-500">INBOX</h5>
+						<div>
+							<span class="">Email</span> <i class="far fa-angle-right"></i> <span>Inbox</span>
 						</div>
 					</div>
 				</div>
-				<div class="row">
+				<div class="row mt-3">
 					<div class="col-md-12">
-						<div class="bg-white p-3 rounded">
-							<div id="checkout-nav-pills-wizard" class="twitter-wizard">
-								<ul class="nav nav-pills twitter-wizard-nav nav-justified" role="tablist">
-									<li class="nav-item">
-										<a class="nav-link active" data-toggle="pill" href="#home">
-											<span class="step-number">01</span>
-											<span class="step-title">Basic Info</span>
-										</a>
-									</li>
-									<li class="nav-item">
-										<a class="nav-link" data-toggle="pill" href="#menu1">
-											<span class="step-number">02</span>
-											<span class="step-title">Product Img</span>
-										</a>
-									</li>
-									<li class="nav-item">
-										<a class="nav-link" data-toggle="pill" href="#menu2">
-											<span class="step-number">03</span>
-											<span class="step-title">Meta Data</span>
-										</a>
-									</li>
-								</ul>
-								<!-- Tab panes -->
-								<div class="tab-content twitter-wizard-tab-content">
-									<div id="home" class="tab-pane active"><br>
-										<div class="h5 card-title">Basic Information</div>
-										<p class="card-title-desc">Fill in all information below</p>
-										<form>
-											<div class="mb-3">
-												<label for="productname" class="form-label">Product Name</label>
-												<input id="productname" name="productname" type="text" class="form-control form-control">
-											</div>
-											<div class="row">
-												<div class="col-lg-4">
-													<div class="mb-3">
-														<label for="manufacturername" class="form-label">Manufacturer Name</label>
-														<input id="manufacturername" name="manufacturername" type="text" class="form-control form-control">
-													</div>
-												</div>
-												<div class="col-lg-4">
-													<div class="mb-3">
-														<label for="manufacturerbrand" class="form-label">Manufacturer Brand</label>
-														<input id="manufacturerbrand" name="manufacturerbrand" type="text" class="form-control form-control">
-													</div>
-												</div>
-												<div class="col-lg-4">
-													<div class="mb-3">
-														<label for="price" class="form-label">Price</label>
-														<input id="price" name="price" type="text" class="form-control form-control">
-													</div>
-												</div>
-											</div>
-											<div class="row">
-												<div class="col-md-6">
-													<div class="mb-3">
-														<label class="form-label">Category</label>
-														<select class="form-control select2">
-															<option>Select</option>
-															<option value="EL">Electronic</option>
-															<option value="FA">Fashion</option>
-															<option value="FI">Fitness</option>
-														</select>
-													</div>
-												</div>
-												<div class="col-md-6">
-													<div class="mb-3">
-														<label class="form-label">Features</label>
-														<select class="form-control select2">
-															<option>Choose</option>
-															<option value="Alaska">Alaska</option>
-															<option value="Havaii">Havaii</option>
-															<option value="California">California</option>
-															<option value="Naveda">Naveda</option>
-															<option value="Oregon">Oregon</option>
-															<option value="Washington">Washington</option>
-														</select>
-													</div>
-												</div>
-											</div>
-											<div class="mb-3">
-												<label class="form-label" for="productdesc">Product Description</label>
-												<textarea class="form-control" id="productdesc" rows="5"></textarea>
-											</div>
-										</form>
-									</div>
-									<div id="menu1" class="tab-pane fade"><br>
-										<div class="h4 card-title">Product Images</div>
-										<p class="card-title-desc">Upload product image</p>
-										<form class="dropzone">
-											<div>
-												<div class="dz-message needsclick" tabindex="0">
-													<input multiple="" type="file" autocomplete="off" tabindex="-1" style="display: none;">
-													<div class="mb-3">
-														<i class="display-4 text-muted fas fa-cloud-upload"></i>
-													</div>
-													<h4>Drop files here or click to upload.</h4>
-												</div>
-											</div>
-											<div class="dropzone-previews mt-3" id="file-previews"></div>
-										</form>
-									</div>
-									<div id="menu2" class="tab-pane fade"><br>
-										<div class="h4 card-title">Meta Data</div>
-										<p class="card-title-desc">Fill all information below</p>
-										<form>
-											<div class="row">
-												<div class="col-lg-6">
-													<div class="mb-3">
-														<label for="manufacturerbrand" class="form-label">Meta Title</label>
-														<input id="metatitle" name="manufacturerbrand" type="text" class="form-control form-control">
-													</div>
-												</div>
-												<div class="col-lg-6">
-													<div class="mb-3">
-														<label for="price" class="form-label">Meta Keywords</label>
-														<input id="metaKeywords" name="price" type="text" class="form-control form-control">
-													</div>
-												</div>
-											</div>
-											<div class="mb-3">
-												<label for="metadescription" class="">Meta Description
-												</label>
-												<textarea class="form-control" id="metadescription" rows="5">
-													
-												</textarea>
-											</div>
-											<div class="text-center mt-4">
-												<button type="submit" class="me-1 btn btn-primary">Save Changes</button> 
-												<button type="submit" class="btn btn-light">Cancel</button>
-											</div>
-										</form>
-									</div>
-								</div>
-							</div>
+						<div class="bg-white rounded p-3">
+							
+							<table class="w-100 mt-3">
+								<tbody>
+									<tr class="border-top">
+										<td>
+											<input type="checkbox" name="" class="mr-3">
+										</td>
+										<td><i class="fal fa-star text-table"></i></td>
+										<td class="text-center text-table py-3">Peter,me (3)</td>
+										<td class="text-table">Trip home from Colombo has been arranged, then Jenna</td>
+										<td class="text-table">Mar 6</td>
+									</tr>
+									<tr class="border-top">
+										<td>
+											<input type="checkbox" name="" class="mr-3">
+										</td>
+										<td><i class="fal fa-star text-table"></i></td>
+										<td class="text-center text-table py-3">me,Sussana (7)</td>
+										<td class="text-table">
+										Since you asked... and i'm inconceivably bored at the train station –</td>
+										<td class="text-table">Mar 6</td>
+									</tr>
+									<tr class="border-top">
+										<td>
+											<input type="checkbox" name="" class="mr-3">
+										</td>
+										<td><i class="fal fa-star text-table"></i></td>
+										<td class="text-center text-table py-3">me,Sussana (7)</td>
+										<td class="text-table">
+										Since you asked... and i'm inconceivably bored at the train station –</td>
+										<td class="text-table">Mar 6</td>
+									</tr>
+									<tr class="border-top">
+										<td>
+											<input type="checkbox" name="" class="mr-3">
+										</td>
+										<td><i class="fal fa-star text-table"></i></td>
+										<td class="text-center text-table py-3">me,Sussana (7)</td>
+										<td class="text-table">
+										Eff that place, you might as well stay here with us instead</td>
+										<td class="text-table">Mar 6</td>
+									</tr>
+									<tr class="border-top">
+										<td>
+											<input type="checkbox" name="" class="mr-3">
+										</td>
+										<td><i class="fal fa-star text-table"></i></td>
+										<td class="text-center text-table py-3">me,Sussana (7)</td>
+										<td class="text-table">
+										Eff that place, you might as well stay here with us instead</td>
+										<td class="text-table">Mar 6</td>
+									</tr>
+									<tr class="border-top">
+										<td>
+											<input type="checkbox" name="" class="mr-3">
+										</td>
+										<td><i class="fal fa-star text-table"></i></td>
+										<td class="text-center text-table py-3">me,Sussana (7)</td>
+										<td class="text-table">
+										Eff that place, you might as well stay here with us instead</td>
+										<td class="text-table">Mar 6</td>
+									</tr>
+									<tr class="border-top">
+										<td>
+											<input type="checkbox" name="" class="mr-3">
+										</td>
+										<td><i class="fal fa-star text-table"></i></td>
+										<td class="text-center text-table py-3">me,Sussana (7)</td>
+										<td class="text-table">Suppport	Eff that place, you might as well stay here with us instead</td>
+										<td class="text-table">Mar 6</td>
+									</tr>
+									<tr class="border-top">
+										<td>
+											<input type="checkbox" name="" class="mr-3">
+										</td>
+										<td><i class="fal fa-star text-table"></i></td>
+										<td class="text-center text-table py-3">me,Sussana (7)</td>
+										<td class="text-table">Suppport
+										Eff that place, you might as well stay here with us instead</td>
+										<td class="text-table">Mar 6</td>
+									</tr>
+									<tr class="border-top">
+										<td>
+											<input type="checkbox" name="" class="mr-3">
+										</td>
+										<td><i class="fal fa-star text-table"></i></td>
+										<td class="text-center text-table py-3">me,Sussana (7)</td>
+										<td class="text-table">
+										Eff that place, you might as well stay here with us instead</td>
+										<td class="text-table">Mar 6</td>
+									</tr>
+								</tbody>
+							</table>
 						</div>
 					</div>
 				</div>

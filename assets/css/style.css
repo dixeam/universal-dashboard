@@ -1,6 +1,7 @@
 body,p,a,ul li,span,h4,h5,label{
 	font-family:-apple-system, BlinkMacSystemFont, "San Francisco", "Segoe UI", Roboto, "Helvetica Neue", sans-serif;!important;
 }
+
 .h-90{
 	height: 90px !important;
 }
@@ -229,6 +230,7 @@ body,p,a,ul li,span,h4,h5,label{
 }
 
 .month ul {
+	list-style: none !important;
 	margin: 0;
 	padding: 0;
 }
@@ -427,7 +429,7 @@ body,p,a,ul li,span,h4,h5,label{
 	border-left: 0em solid transparent !important;
 }
 .text-table{
-	font-size: 16px;
+	font-size: 14px;
 	color: #74788d;
 }
 .message-list {
@@ -1053,6 +1055,7 @@ img, svg {
 	.btn-gr{
 		background-color: #74788d;
 	}
+
 	/*Read-mai Ended*/
 
 	/*Shop Started*/
@@ -2304,5 +2307,23 @@ img, svg {
 	background-color: rgb(204, 204, 204);
 }
 
+@media only screen and (max-width: 428px) {
+	.new-cl {
+		justify-content: center;
+	}
+}
 /*Rating Ended*/
 
+
+/*Gmail Started*/
+.tab-div{
+	height: 25px;
+	width: 25px;
+	text-align: center;
+}
+@media only screen and (max-width: 767px) {
+	.text-table {
+		font-size: 9px;
+	}
+}
+/*Gmail Ended*/

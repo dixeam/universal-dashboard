@@ -10,6 +10,7 @@
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400;1,500&family=Open+Sans:wght@500;600;700&family=Poppins:wght@200;300;400;500&display=swap" rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/select2@4.0.12/dist/css/select2.min.css" rel="stylesheet" />
 </head>
 <body>
 	<nav class="navbar navbar-expand-lg navbar-light bd-bt py-2">
@@ -119,7 +120,7 @@
 			<li class="mb-2 p-2 ecomop">
 				<i class="fas fa-cash-register mr-3"></i><span>Ecommerce</span><i class="fas fa-caret-down float-right"></i>
 			</li>
-			<ul class=" sub bg-white rounded ecomcl" style="">
+			<ul class=" sub bg-white rounded ecomcl" style="display: none;">
 				<li class="py-1 pl-5"><a href="product.html">Products</a></li>
 				<li class="py-1 pl-5"><a href="detail.html">Product Detail</a></li>
 				<li class="py-1 pl-5"><a href="order.html">Orders</a></li>
@@ -127,7 +128,7 @@
 				<li class="py-1 pl-5"><a href="cart.html">Cart</a></li>
 				<li class="py-1 pl-5"><a href="checkout.html">Checkout</a></li>
 				<li class="py-1 pl-5"><a href="shop.html">Shops</a></li>
-				<li class="py-1 pl-5 active"><a href="add-product.html">Add Product</a></li>
+				<li class="py-1 pl-5"><a href="add-product.html">Add Product</a></li>
 			</ul>
 			<li class="mb-2 p-2 closed">
 				<i class="fas fa-envelope mr-3"></i><span>Email</span><i class="fas fa-caret-down float-right"></i>
@@ -192,10 +193,10 @@
 			<li class="mb-2 p-2 formcl">
 				<i class="fas fa-eraser mr-3"></i><span class="">Forms</span><span class="badge badge-pill badge-danger float-right mt-1">6</span>
 			</li>
-			<ul class="formop sub bg-white rounded" style="display: none;">
+			<ul class="formop sub bg-white rounded" style="">
 				<li class="py-1 pl-5"><a href="element.html">Form Elements</a></li>
 				<li class="py-1 pl-5"><a href="validation.html">Form Validation</a></li>
-				<li class="py-1 pl-5"><a href="advance.html">Form Advance Plugin</a></li>
+				<li class="py-1 pl-5 active"><a href="advance.html">Form Advance Plugin</a></li>
 				<li class="py-1 pl-5"><a href="editor.html">Form Editor</a></li>
 				<li class="py-1 pl-5"><a href="form-upload.html">Form File Upload</a></li>
 				<li class="py-1 pl-5"><a href="form-edit.html">Form X-editabe</a></li>
@@ -256,145 +257,195 @@
 			<div class="col-md-12 bg-grey pb-3 px-3">
 				<div class="row my-3">
 					<div class="col-md-12 d-flex justify-content-between">
-						<h5 class="text-dark f-16">ECOMMERCE</h5>
+						<h5 class="text-dark f-16">FORM ADVANCED</h5>
 						<div class="d-flex align-items-center">
-							<span>Ecommerce</span> <i class="mt-1 mx-2 far fa-angle-right"></i> <span>Add Product</span>
+							<span>Forms</span> <i class="mt-1 mx-2 far fa-angle-right"></i> <span>Form Advanced</span>
 						</div>
 					</div>
 				</div>
-				<div class="row">
+				<div class="row bg-white rounded mx-1 py-3">
 					<div class="col-md-12">
-						<div class="bg-white p-3 rounded">
-							<div id="checkout-nav-pills-wizard" class="twitter-wizard">
-								<ul class="nav nav-pills twitter-wizard-nav nav-justified" role="tablist">
-									<li class="nav-item">
-										<a class="nav-link active" data-toggle="pill" href="#home">
-											<span class="step-number">01</span>
-											<span class="step-title">Basic Info</span>
-										</a>
-									</li>
-									<li class="nav-item">
-										<a class="nav-link" data-toggle="pill" href="#menu1">
-											<span class="step-number">02</span>
-											<span class="step-title">Product Img</span>
-										</a>
-									</li>
-									<li class="nav-item">
-										<a class="nav-link" data-toggle="pill" href="#menu2">
-											<span class="step-number">03</span>
-											<span class="step-title">Meta Data</span>
-										</a>
-									</li>
-								</ul>
-								<!-- Tab panes -->
-								<div class="tab-content twitter-wizard-tab-content">
-									<div id="home" class="tab-pane active"><br>
-										<div class="h5 card-title">Basic Information</div>
-										<p class="card-title-desc">Fill in all information below</p>
-										<form>
-											<div class="mb-3">
-												<label for="productname" class="form-label">Product Name</label>
-												<input id="productname" name="productname" type="text" class="form-control form-control">
-											</div>
-											<div class="row">
-												<div class="col-lg-4">
-													<div class="mb-3">
-														<label for="manufacturername" class="form-label">Manufacturer Name</label>
-														<input id="manufacturername" name="manufacturername" type="text" class="form-control form-control">
-													</div>
-												</div>
-												<div class="col-lg-4">
-													<div class="mb-3">
-														<label for="manufacturerbrand" class="form-label">Manufacturer Brand</label>
-														<input id="manufacturerbrand" name="manufacturerbrand" type="text" class="form-control form-control">
-													</div>
-												</div>
-												<div class="col-lg-4">
-													<div class="mb-3">
-														<label for="price" class="form-label">Price</label>
-														<input id="price" name="price" type="text" class="form-control form-control">
-													</div>
-												</div>
-											</div>
-											<div class="row">
-												<div class="col-md-6">
-													<div class="mb-3">
-														<label class="form-label">Category</label>
-														<select class="form-control select2">
-															<option>Select</option>
-															<option value="EL">Electronic</option>
-															<option value="FA">Fashion</option>
-															<option value="FI">Fitness</option>
-														</select>
-													</div>
-												</div>
-												<div class="col-md-6">
-													<div class="mb-3">
-														<label class="form-label">Features</label>
-														<select class="form-control select2">
-															<option>Choose</option>
-															<option value="Alaska">Alaska</option>
-															<option value="Havaii">Havaii</option>
-															<option value="California">California</option>
-															<option value="Naveda">Naveda</option>
-															<option value="Oregon">Oregon</option>
-															<option value="Washington">Washington</option>
-														</select>
-													</div>
-												</div>
-											</div>
-											<div class="mb-3">
-												<label class="form-label" for="productdesc">Product Description</label>
-												<textarea class="form-control" id="productdesc" rows="5"></textarea>
-											</div>
-										</form>
+						<h5 class="f-16 fw-500">Select2</h5>
+						<span class="text-muted f-15">Provide valuable, actionable feedback to your users with HTML5 form validation–available in all our supported browsers.
+						</span>
+					</div>
+					<div class="col-md-6 mt-3">
+						<div class="px-3">
+							<form>
+								<div class="form-group">
+									<label for="">Single Select</label>
+									<select class="form-control" id="">
+										<option>Select..</option>
+										<option>Mustard</option>
+										<option>Ketchup</option>
+										<option>Relish</option>
+										<option>Tent</option>
+										<option>Flashlight</option>
+										<option>Toilet Paper</option>
+									</select>
+								</div>
+							</form>
+						</div>
+					</div>
+					<div class="col-md-6 mt-3">
+						<div class="px-3">
+							<form>
+								<div class="form-group">
+									<label for="">Example select</label>
+									<select class="form-control" id="" disabled>
+										<option>Select..</option>
+										<option>Mustard</option>
+										<option>Ketchup</option>
+										<option>Relish</option>
+										<option>Tent</option>
+										<option>Flashlight</option>
+										<option>Toilet Paper</option>
+									</select>
+								</div>
+							</form>
+						</div>
+					</div>
+					<div class="col-md-6 mx-3">
+						<form>
+							<div class="form-group">
+								<label>Select Languages</label>
+								<select class="form-control" id="tope" multiple>
+									<option>Mustard</option>
+									<option>Ketchup</option>
+									<option>Relish</option>
+									<option>Tent</option>
+									<option>Flashlight</option>
+									<option>Toilet Paper</option>
+								</select>
+							</div>
+						</form>
+					</div>
+				</div>
+				<div class="row mt-3 px-1">
+					<div class="col-md-6">
+						<div class="bg-white rounded p-3">
+							<h5 class="f-16 fw-500">React Colorpicker</h5>
+							<span class="text-muted f-15">Fancy and customizable colorpicker plugin for Twitter Bootstrap.
+							</span>
+							<div class="form-group mt-3">
+								<label>Simple input field</label>
+								<br>
+								<div class="d-flex">
+									<input type="color" class="form-control" name="">
+								</div>
+							</div>
+							<div class="form-group mb-0 mt-3">
+								<label>As a component</label>
+								<br>
+								<div class="d-flex">
+									<input type="text" class="form-control" name="" placeholder="#000000">
+									<input type="color" class="mt-1" name="">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row mt-4 px-1">
+					<div class="col-md-6">
+						<div class="bg-white rounded p-3">
+							<h5 class="f-16 fw-500">Bootstrap MaxLength</h5>
+							<span class="text-muted f-15">Provide valuable, actionable feedback to your users with HTML5 form validation–available in all our supported browsers.
+							</span>
+							<div class="form-group mt-4">
+								<label class="mb-0">Default usage</label>
+								<p class="f-14 mt-2">Do you want the badge to show up when there are 20 chars or less? Use the threshold option.</p>
+								<input type="text" class="form-control" name="" minlenght="0" maxlength="25">
+							</div>
+							<div class="form-group mt-4">
+								<label class="mb-0">Threshold value</label>
+								<p class="f-14 mt-2">Do you want the badge to show up when there are 20 chars or less? Use the <span class="text-pink">threshold</span> option.</p>
+								<input type="text" class="form-control" name="" minlenght="0" maxlength="25">
+							</div>
+							<div class="form-group mt-4">
+								<label class="mb-0">All the options</label>
+								<p class="f-14 mt-2">Please note: if the <span class="text-pink">alwaysShow</span> option isenabled, the <span class="text-pink">threshold</span> option is ignored.</p>
+								<input type="text" class="form-control" name="" minlenght="0" maxlength="25">
+							</div>
+							<div class="form-group mt-4">
+								<label class="mb-0">Position</label>
+								<p class="f-14 mt-2">All you need to do is specify the <span class="text-pink">placement</span> option, with one of those strings. If none is specified, the positioning will be defauted to 'bottom'.</p>
+								<input type="text" class="form-control" name="" minlenght="0" maxlength="25">
+							</div>
+							<div class="form-group mt-4">
+								<label class="mb-0">Textarea</label>
+								<p class="f-14 mt-2">Bootstrap maxlength supports textarea as well as inputs. Even on old IE.</p>
+								<textarea class="form-control" maxlength="225" rows="4"></textarea>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="bg-white rounded p-3">
+							<h5 class="f-16 fw-500">Bootstrap TouchSpin</h5>
+							<span class="text-muted f-15">A mobile and touch friendly input spinner component for Bootstrap.
+							</span>
+							<div class="form-group mt-4">
+								<label>Using data attributes</label>
+								<div class="input-group">
+									<div class="input-group-append">
+										<button type="button" class="btn btn-blue rounded-left" onclick="decrement()">
+											<i class="far fa-minus text-white"></i>
+										</button>
 									</div>
-									<div id="menu1" class="tab-pane fade"><br>
-										<div class="h4 card-title">Product Images</div>
-										<p class="card-title-desc">Upload product image</p>
-										<form class="dropzone">
-											<div>
-												<div class="dz-message needsclick" tabindex="0">
-													<input multiple="" type="file" autocomplete="off" tabindex="-1" style="display: none;">
-													<div class="mb-3">
-														<i class="display-4 text-muted fas fa-cloud-upload"></i>
-													</div>
-													<h4>Drop files here or click to upload.</h4>
-												</div>
-											</div>
-											<div class="dropzone-previews mt-3" id="file-previews"></div>
-										</form>
+									<input type="number" id="input1" class="form-control" placeholder="number" readonly="" value="65">
+									<div class="input-group-append">
+										<button type="button" class="btn btn-blue"><i class="far fa-plus text-white"onclick="increment()"></i>
+										</button>
 									</div>
-									<div id="menu2" class="tab-pane fade"><br>
-										<div class="h4 card-title">Meta Data</div>
-										<p class="card-title-desc">Fill all information below</p>
-										<form>
-											<div class="row">
-												<div class="col-lg-6">
-													<div class="mb-3">
-														<label for="manufacturerbrand" class="form-label">Meta Title</label>
-														<input id="metatitle" name="manufacturerbrand" type="text" class="form-control form-control">
-													</div>
-												</div>
-												<div class="col-lg-6">
-													<div class="mb-3">
-														<label for="price" class="form-label">Meta Keywords</label>
-														<input id="metaKeywords" name="price" type="text" class="form-control form-control">
-													</div>
-												</div>
-											</div>
-											<div class="mb-3">
-												<label for="metadescription" class="">Meta Description
-												</label>
-												<textarea class="form-control" id="metadescription" rows="5">
-													
-												</textarea>
-											</div>
-											<div class="text-center mt-4">
-												<button type="submit" class="me-1 btn btn-primary">Save Changes</button> 
-												<button type="submit" class="btn btn-light">Cancel</button>
-											</div>
-										</form>
+								</div>
+							</div>
+							<div class="form-group mt-4">
+								<label>Example with postfix(large)</label>
+								<br>
+								<label class="mt-3">With prefix</label>
+								<div class="input-group">
+									<span class="input-group-btn input-group-prepend">
+										<button type="button" class="btn btn-blue" onclick="dec()">
+											<i class="text-white far fa-minus"></i>
+										</button>
+									</span>
+									<input type="number" class="form-control" placeholder="number" readonly="" value="20" id="input2">
+									<span class="input-group-append">
+										<span class="input-group-text">%</span>
+									</span>
+									<span class="input-group-append">
+										<button type="button" class="btn btn-blue" onclick="inc()">
+											<i class="text-white far fa-plus"></i>
+										</button>
+									</span>
+								</div>
+							</div>
+							<div class="form-group mt-4">
+								<label>Value attribute is not set (applying settings.initval)</label>
+								<div class="input-group">
+									<div class="input-group-append">
+										<button type="button" class="btn btn-blue rounded-left" onclick="decr()">
+											<i class="far fa-minus text-white"></i>
+										</button>
+									</div>
+									<input type="number" id="input3" class="form-control" placeholder="number" readonly="" value="14">
+									<div class="input-group-append">
+										<button type="button" class="btn btn-blue"><i class="far fa-plus text-white"onclick="incr()"></i>
+										</button>
+									</div>
+								</div>
+							</div>
+							<div class="form-group mt-4">
+								<label>Value is set explicitly to 33 (skipping settings.initval)</label>
+								<div class="input-group">
+									<div class="input-group-append">
+										<button type="button" class="btn btn-blue rounded-left" onclick="decre()">
+											<i class="far fa-minus text-white"></i>
+										</button>
+									</div>
+									<input type="number" id="input4" class="form-control" placeholder="number" readonly="" value="33">
+									<div class="input-group-append">
+										<button type="button" class="btn btn-blue"><i class="far fa-plus text-white"onclick="incre()"></i>
+										</button>
 									</div>
 								</div>
 							</div>
@@ -417,7 +468,7 @@
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
 	<script type="text/javascript">
 		$(document).ready(function(){
 			$(".hidden").click(function(){
@@ -493,6 +544,65 @@
 
 		function closeNav() {
 			document.getElementById("mySidenav").style.width = "0";
+		}
+	</script>
+	<script type="text/javascript">
+		$('#tope').select2({
+			width: '95%'
+		});
+	</script>
+	<script type="text/javascript">
+		function increment() {
+			var value1 = document.getElementById('input1').value;
+			var increme = Math.floor(value1);
+			increme++;
+			document.getElementById("input1").value = increme;
+			
+		}
+		function decrement() {
+			var value1 = document.getElementById('input1').value;
+			var increme = Math.floor(value1);
+			increme--;
+			document.getElementById("input1").value = increme;
+		}
+		function inc() {
+			var value2 = document.getElementById('input2').value;
+			var increme = Math.floor(value2);
+			increme++;
+			document.getElementById("input2").value = increme;
+			
+		}
+		function dec() {
+			var value2 = document.getElementById('input2').value;
+			var increme = Math.floor(value2);
+			increme--;
+			document.getElementById("input2").value = increme;
+		}
+		function incr() {
+			var value3 = document.getElementById('input3').value;
+			var increme = Math.floor(value3);
+			increme++;
+			document.getElementById("input3").value = increme;
+			
+		}
+		function decr() {
+			var value3 = document.getElementById('input3').value;
+			var increme = Math.floor(value3);
+			increme--;
+			document.getElementById("input3").value = increme;
+		}
+		function incre() {
+			var value4 = document.getElementById('input4').value;
+			var increme = Math.floor(value4);
+			increme++;
+			document.getElementById("input4").value = increme;
+			
+		}
+		function decre() {
+			var value4 = document.getElementById('input4').value;
+			var increme = Math.floor(value4);
+			increme--;
+			document.getElementById("input4").value = increme;
 		}
 	</script>
 </body>
