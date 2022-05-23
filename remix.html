@@ -5,18 +5,12 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Dashboard</title>
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
 	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 	<link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.css">
-
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400;1,500&family=Open+Sans:wght@500;600;700&family=Poppins:wght@200;300;400;500&display=swap" rel="stylesheet">
-	<style type="text/css">
-		.swal2-cancel{
-			margin-right: 10px !important;
-		}
-	</style>
 </head>
 <body>
 	<nav class="navbar navbar-expand-lg navbar-light bd-bt py-2">
@@ -174,7 +168,7 @@
 			<li class="mb-2 p-2 elementc">
 				<i class="fad fa-pencil-ruler mr-3"></i><span class="">UI Elements</span><i class="fas fa-caret-down float-right"></i>
 			</li>
-			<ul class="elemento sub bg-white rounded" style="">
+			<ul class="elemento sub bg-white rounded" style="display: none;">
 				<li class="py-1 pl-5"><a href="alert.html">Alerts</a></li>
 				<li class="py-1 pl-5"><a href="button.html">Buttons</a></li>
 				<li class="py-1 pl-5"><a href="card.html">Cards</a></li>
@@ -188,7 +182,7 @@
 				<li class="py-1 pl-5"><a href="round-slide.html">Round Slider</a></li>
 				<li class="py-1 pl-5"><a href="session.html">Session Timeout</a></li>
 				<li class="py-1 pl-5"><a href="progress.html">Progress Bars</a></li>
-				<li class="py-1 pl-5 active"><a href="sweet.html">Sweet Alerts</a></li>
+				<li class="py-1 pl-5"><a href="sweet.html">Sweet Alerts</a></li>
 				<li class="py-1 pl-5"><a href="tabs.html">Tabs & Accordian</a></li>
 				<li class="py-1 pl-5"><a href="typography.html">Typography</a></li>
 				<li class="py-1 pl-5"><a href="video.html">Video</a></li>
@@ -230,8 +224,8 @@
 			<li class="mb-2 p-2 iconcl">
 				<i class="fas fa-paint-brush-alt mr-3"></i><span class="">Icons</span><i class="fas fa-caret-down float-right"></i>
 			</li>
-			<ul class="iconop sub bg-white rounded" style="display: none;">
-				<li class="py-1 pl-5"><a href="remix.html">Remix Icons</a></li>
+			<ul class="iconop sub bg-white rounded">
+				<li class="py-1 pl-5 active"><a href="remix.html">Remix Icons</a></li>
 				<li class="py-1 pl-5"><a href="matrerial.html">Material Design</a></li>
 				<li class="py-1 pl-5"><a href="dripic.html">Dripicons</a></li>
 				<li class="py-1 pl-5"><a href="font-awe.html">Font awesome 5</a></li>
@@ -263,125 +257,174 @@
 			<div class="col-md-12 bg-grey pb-3 px-3">
 				<div class="row my-3">
 					<div class="col-md-12 d-flex justify-content-between">
-						<h5 class="text-dark f-16">SWEETALERT 2</h5>
+						<h5 class="text-dark f-16">REMIX ICONS</h5>
 						<div class="d-flex align-items-center">
-							<span>Nazox</span> <i class="mt-1 mx-2 far fa-angle-right"></i> <span>Sweetalert2</span>
+							<span>Icons</span> <i class="mt-1 mx-2 far fa-angle-right"></i> <span>Remix Icons</span>
 						</div>
 					</div>
 				</div>
-				<div class="row mt-3">
-					<div class="col-md-12">
-						<div class="bg-white rounded p-3">
-							<div class="row">
-								<div class="col-md-12">
-									<h5 class="f-16 fw-500">Examples</h5>
-									<span class="text-muted f-15">A beautiful, responsive, customizable and accessible (WAI-ARIA) replacement for JavaScript's popup boxes. Zero dependencies.
-									</span>
-								</div>
-							</div>
-							<div class="row mt-3">
-								<div class="col-md-3">
-									<div class="text-center">
-										<p class="mb-0 text-muted">A basic message</p>
-										<button class="mt-3 btn btn-blue" onclick="one()">
-											Click me
-										</button>
-									</div>
-								</div>
-								<div class="col-md-3">
-									<div class="text-center text-muted">
-										<p class="mb-0">A title with a text under</p>
-										<button class="mt-3 btn btn-blue" onclick="two()">
-											Click me
-										</button>
-									</div>
-								</div>
-								<div class="col-md-3">
-									<div class="text-center text-muted">
-										<p class="mb-0">Warning message</p>
-										<button class="mt-3 btn btn-blue" onclick="three()">
-											Click me
-										</button>
-									</div>
-								</div>
-								<div class="col-md-3">
-									<div class="text-center text-muted">
-										<p class="mb-0">Custom HTML description</p>
-										<button class="mt-3 btn btn-blue" onclick="four()">
-											Click me
-										</button>
-									</div>
-								</div>
-							</div>
-							<div class="row mt-5">
-								<div class="col-md-3">
-									<div class="text-center">
-										<p class="mb-0 text-muted">A dialog with three buttons</p>
-										<button class="mt-3 btn btn-blue" onclick="five()">
-											Click me
-										</button>
-									</div>
-								</div>
-								<div class="col-md-3">
-									<div class="text-center text-muted">
-										<p class="mb-0">A custom positioned dialog</p>
-										<button class="mt-3 btn btn-blue" onclick="six()">
-											Click me
-										</button>
-									</div>
-								</div>
-								<div class="col-md-3">
-									<div class="text-center text-muted">
-										<p class="mb-0">Custom</p>
-										<button class="mt-3 btn btn-blue" onclick="seven()">
-											Click me
-										</button>
-									</div>
-								</div>
-								<div class="col-md-3">
-									<div class="text-center text-muted">
-										<p class="mb-0">A confirm dialog</p>
-										<button class="mt-3 btn btn-blue" onclick="eight()">
-											Click me
-										</button>
-									</div>
-								</div>
-							</div>
-							<div class="row mt-5">
-								<div class="col-md-3">
-									<div class="text-center">
-										<p class="mb-0 text-muted">Passing a parameter</p>
-										<button class="mt-3 btn btn-blue" onclick="nine()">
-											Click me
-										</button>
-									</div>
-								</div>
-								<div class="col-md-3">
-									<div class="text-center text-muted">
-										<p class="mb-0">A message with a custom image</p>
-										<button class="mt-3 btn btn-blue" onclick="ten()">
-											Click me
-										</button>
-									</div>
-								</div>
-								<div class="col-md-3">
-									<div class="text-center text-muted">
-										<p class="mb-0">AJAX request example</p>
-										<button class="mt-3 btn btn-blue" onclick="eleven()">
-											Click me
-										</button>
-									</div>
-								</div>
-								<div class="col-md-3">
-									<div class="text-center text-muted">
-										<p class="mb-0">A message with auto close timer</p>
-										<button class="mt-3 btn btn-blue" onclick="twelve()">
-											Click me
-										</button>
-									</div>
-								</div>
-							</div>
-						</div>
+				<div class="row icon-demo-content mx-1 bg-white py-3">
+					<div class="col-xl-3 col-lg-4 col-sm-6 mb-3">
+						<i class="ri-home-line"></i> ri-home-line
+					</div>
+					<div class="col-xl-3 col-lg-4 col-sm-6 mb-3">
+						<i class="ri-home-fill"></i> ri-home-fill
+					</div>
+					<div class="col-xl-3 col-lg-4 col-sm-6 mb-3">
+						<i class="ri-home-2-line"></i> ri-home-2-line
+					</div>
+					<div class="col-xl-3 col-lg-4 col-sm-6 mb-3">
+						<i class="ri-home-2-fill"></i> ri-home-2-fill 
+					</div>
+					<div class="col-xl-3 col-lg-4 col-sm-6 mb-3">
+						<i class="ri-home-3-line"></i> ri-home-3-line
+					</div>
+					<div class="col-xl-3 col-lg-4 col-sm-6 mb-3">
+						<i class="ri-home-3-fill"></i> ri-home-3-fill 
+					</div>
+					<div class="col-xl-3 col-lg-4 col-sm-6 mb-3">
+						<i class="ri-home-4-line"></i> ri-home-4-line
+					</div>
+					<div class="col-xl-3 col-lg-4 col-sm-6 mb-3">
+						<i class="ri-home-4-fill"></i> ri-home-4-fill
+					</div>
+					<div class="col-xl-3 col-lg-4 col-sm-6 mb-3">
+						<i class="ri-home-5-line"></i> ri-home-5-line
+					</div>
+					<div class="col-xl-3 col-lg-4 col-sm-6 mb-3">
+						<i class="ri-home-5-fill"></i> ri-home-5-fill 
+					</div>
+					<div class="col-xl-3 col-lg-4 col-sm-6 mb-3">
+						<i class="ri-home-6-line"></i> ri-home-6-line
+					</div>
+					<div class="col-xl-3 col-lg-4 col-sm-6 mb-3">
+						<i class="ri-home-6-fill"></i> ri-home-6-fill 
+					</div>
+					<div class="col-xl-3 col-lg-4 col-sm-6 mb-3">
+						<i class="ri-home-7-line"></i> ri-home-7-line
+					</div>
+					<div class="col-xl-3 col-lg-4 col-sm-6 mb-3">
+						<i class="ri-home-7-fill"></i> ri-home-7-fill
+					</div>
+					<div class="col-xl-3 col-lg-4 col-sm-6 mb-3">
+						<i class="ri-home-8-line"></i> ri-home-8-line
+					</div>
+					<div class="col-xl-3 col-lg-4 col-sm-6 mb-3">
+						<i class="ri-home-8-fill"></i> ri-home-8-fill 
+					</div>
+					<div class="col-xl-3 col-lg-4 col-sm-6 mb-3">
+						<i class="ri-home-gear-line"></i> ri-home-gear-line
+					</div>
+					<div class="col-xl-3 col-lg-4 col-sm-6 mb-3">
+						<i class="ri-home-gear-fill"></i> ri-home-gear-fill 
+					</div>
+					<div class="col-xl-3 col-lg-4 col-sm-6 mb-3">
+						<i class="ri-home-wifi-line"></i> ri-home-wifi-line
+					</div>
+					<div class="col-xl-3 col-lg-4 col-sm-6 mb-3">
+						<i class="ri-home-wifi-fill"></i> ri-home-wifi-fill 
+					</div>
+					<div class="col-xl-3 col-lg-4 col-sm-6 mb-3">
+						<i class="ri-home-smile-line"></i> ri-home-smile-line
+					</div>
+					<div class="col-xl-3 col-lg-4 col-sm-6 mb-3">
+						<i class="ri-home-smile-fill"></i> ri-home-smile-fill 
+					</div>
+					<div class="col-xl-3 col-lg-4 col-sm-6 mb-3">
+						<i class="ri-home-smile-2-line"></i> ri-home-smile-2-line
+					</div>
+					<div class="col-xl-3 col-lg-4 col-sm-6 mb-3">
+						<i class="ri-home-smile-2-fill"></i> ri-home-smile-2-fill 
+					</div>
+					<div class="col-xl-3 col-lg-4 col-sm-6 mb-3">
+						<i class="ri-home-heart-line"></i> ri-home-heart-line
+					</div>
+					<div class="col-xl-3 col-lg-4 col-sm-6 mb-3">
+						<i class="ri-home-heart-fill"></i> ri-home-heart-fill 
+					</div>
+					<div class="col-xl-3 col-lg-4 col-sm-6 mb-3">
+						<i class="ri-building-line"></i> ri-building-line
+					</div>
+					<div class="col-xl-3 col-lg-4 col-sm-6 mb-3">
+						<i class="ri-building-fill"></i> ri-building-fill 
+					</div>
+					<div class="col-xl-3 col-lg-4 col-sm-6 mb-3">
+						<i class="ri-building-2-line"></i> ri-building-2-line
+					</div>
+					<div class="col-xl-3 col-lg-4 col-sm-6 mb-3">
+						<i class="ri-building-2-fill"></i> ri-building-2-fill 
+					</div>
+					<div class="col-xl-3 col-lg-4 col-sm-6 mb-3">
+						<i class="ri-building-3-line"></i> ri-building-3-line
+					</div>
+					<div class="col-xl-3 col-lg-4 col-sm-6 mb-3">
+						<i class="ri-building-3-fill"></i> ri-building-3-fill 
+					</div>
+					<div class="col-xl-3 col-lg-4 col-sm-6 mb-3">
+						<i class="ri-building-4-line"></i> ri-building-4-line
+					</div>
+					<div class="col-xl-3 col-lg-4 col-sm-6 mb-3">
+						<i class="ri-building-4-fill"></i> ri-building-4-fill 
+					</div>
+					<div class="col-xl-3 col-lg-4 col-sm-6 mb-3">
+						<i class="ri-hotel-line"></i> ri-hotel-line
+					</div>
+					<div class="col-xl-3 col-lg-4 col-sm-6 mb-3">
+						<i class="ri-hotel-fill"></i> ri-hotel-fill 
+					</div>
+					<div class="col-xl-3 col-lg-4 col-sm-6 mb-3">
+						<i class="ri-community-line"></i> ri-community-line
+					</div>
+					<div class="col-xl-3 col-lg-4 col-sm-6 mb-3">
+						<i class="ri-community-fill"></i> ri-community-fill 
+					</div>
+					<div class="col-xl-3 col-lg-4 col-sm-6 mb-3">
+						<i class="ri-government-line"></i> ri-government-line
+					</div>
+					<div class="col-xl-3 col-lg-4 col-sm-6 mb-3">
+						<i class="ri-government-fill"></i> ri-government-fill 
+					</div>
+					<div class="col-xl-3 col-lg-4 col-sm-6 mb-3">
+						<i class="ri-bank-line"></i> ri-bank-line
+					</div>
+					<div class="col-xl-3 col-lg-4 col-sm-6 mb-3">
+						<i class="ri-bank-fill"></i> ri-bank-fill 
+					</div>
+					<div class="col-xl-3 col-lg-4 col-sm-6 mb-3">
+						<i class="ri-store-line"></i> ri-store-line
+					</div>
+					<div class="col-xl-3 col-lg-4 col-sm-6 mb-3">
+						<i class="ri-store-fill"></i> ri-store-fill
+					</div>
+					<div class="col-xl-3 col-lg-4 col-sm-6 mb-3">
+						<i class="ri-store-2-line"></i> ri-store-2-line
+					</div>
+					<div class="col-xl-3 col-lg-4 col-sm-6 mb-3">
+						<i class="ri-store-2-fill"></i> ri-store-2-fill 
+					</div>
+					<div class="col-xl-3 col-lg-4 col-sm-6 mb-3">
+						<i class="ri-store-3-line"></i> ri-store-3-line
+					</div>
+					<div class="col-xl-3 col-lg-4 col-sm-6 mb-3">
+						<i class="ri-store-3-fill"></i> ri-store-3-fill 
+					</div>
+					<div class="col-xl-3 col-lg-4 col-sm-6 mb-3">
+						<i class="ri-hospital-line"></i> ri-hospital-line
+					</div>
+					<div class="col-xl-3 col-lg-4 col-sm-6 mb-3">
+						<i class="ri-hospital-fill"></i> ri-hospital-fill 
+					</div>
+					<div class="col-xl-3 col-lg-4 col-sm-6 mb-3">
+						<i class="ri-ancient-gate-line"></i> ri-ancient-gate-line
+					</div>
+					<div class="col-xl-3 col-lg-4 col-sm-6 mb-3">
+						<i class="ri-ancient-gate-fill"></i> ri-ancient-gate-fill 
+					</div>
+					<div class="col-xl-3 col-lg-4 col-sm-6 mb-3">
+						<i class="ri-ancient-pavilion-line"></i> ri-ancient-pavilion-line
+					</div>
+					<div class="col-xl-3 col-lg-4 col-sm-6 mb-3">
+						<i class="ri-ancient-pavilion-fill"></i> ri-ancient-pavilion-fill 
 					</div>
 				</div>
 			</div>
@@ -400,7 +443,6 @@
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 	<script type="text/javascript">
 		$(document).ready(function(){
@@ -478,205 +520,7 @@
 		function closeNav() {
 			document.getElementById("mySidenav").style.width = "0";
 		}
-
 	</script>
-	<script type="text/javascript">
-		function one(){
-			Swal.fire('This is Sweet Alert')
-		}
-		function two(){
-			Swal.fire(
-				'The Internet?',
-				'That thing is still around?',
-				'question'
-				)
-		}
-		function three(){
-			Swal.fire({
-				icon: 'error',
-				title: 'Oops...',
-				text: 'Something went wrong!',
-				footer: '<a href="">Why do I have this issue?</a>'
-			})
-		}
-		function four(){
-			Swal.fire({
-				title: '<strong>HTML <u>example</u></strong>',
-				icon: 'info',
-				html:
-				'You can use <b>bold text</b>, ' +
-				'<a href="//sweetalert2.github.io">links</a> ' +
-				'and other HTML tags',
-				showCloseButton: true,
-				showCancelButton: true,
-				focusConfirm: false,
-				confirmButtonText:
-				'<i class="fa fa-thumbs-up"></i> Great!',
-				confirmButtonAriaLabel: 'Thumbs up, great!',
-				cancelButtonText:
-				'<i class="fa fa-thumbs-down"></i>',
-				cancelButtonAriaLabel: 'Thumbs down'
-			})
-		}
-		function five(){
-			Swal.fire({
-				title: 'Do you want to save the changes?',
-				showDenyButton: true,
-				showCancelButton: true,
-				confirmButtonText: 'Save',
-				denyButtonText: `Don't save`,
-			}).then((result) => {
-				/* Read more about isConfirmed, isDenied below */
-				if (result.isConfirmed) {
-					Swal.fire('Saved!', '', 'success')
-				} else if (result.isDenied) {
-					Swal.fire('Changes are not saved', '', 'info')
-				}
-			})
-		}
-		function six(){
-			Swal.fire({
-				position: 'top-end',
-				icon: 'success',
-				title: 'Your work has been saved',
-				showConfirmButton: false,
-				timer: 1500
-			})
-		}
-		function seven(){
-			Swal.fire({
-				title: 'Custom animation with Animate.css',
-				showClass: {
-					popup: 'animate__animated animate__fadeInDown'
-				},
-				hideClass: {
-					popup: 'animate__animated animate__fadeOutUp'
-				}
-			})
-		}
-		function eight(){
-			Swal.fire({
-				title: 'Are you sure?',
-				text: "You won't be able to revert this!",
-				icon: 'warning',
-				showCancelButton: true,
-				confirmButtonColor: '#3085d6',
-				cancelButtonColor: '#d33',
-				confirmButtonText: 'Yes, delete it!'
-			}).then((result) => {
-				if (result.isConfirmed) {
-					Swal.fire(
-						'Deleted!',
-						'Your file has been deleted.',
-						'success'
-						)
-				}
-			})
-		}
-		function nine(){
-			const swalWithBootstrapButtons = Swal.mixin({
-				customClass: {
-					confirmButton: 'btn btn-success',
-					cancelButton: 'btn btn-danger'
-				},
-				buttonsStyling: false
-			})
-
-			swalWithBootstrapButtons.fire({
-				title: 'Are you sure?',
-				text: "You won't be able to revert this!",
-				icon: 'warning',
-				showCancelButton: true,
-				confirmButtonText: 'Yes, delete it!',
-				cancelButtonText: 'No, cancel!',
-				reverseButtons: true
-			}).then((result) => {
-				if (result.isConfirmed) {
-					swalWithBootstrapButtons.fire(
-						'Deleted!',
-						'Your file has been deleted.',
-						'success'
-						)
-				} else if (
-					/* Read more about handling dismissals below */
-					result.dismiss === Swal.DismissReason.cancel
-					) {
-					swalWithBootstrapButtons.fire(
-						'Cancelled',
-						'Your imaginary file is safe :)',
-						'error'
-						)
-				}
-			})
-		}
-		function ten(){
-			Swal.fire({
-				title: 'Sweet!',
-				text: 'Modal with a custom image.',
-				imageUrl: 'https://unsplash.it/400/200',
-				imageWidth: 400,
-				imageHeight: 200,
-				imageAlt: 'Custom image',
-			})
-		}
-		function eleven(){
-			Swal.fire({
-				title: 'Submit your Github username',
-				input: 'text',
-				inputAttributes: {
-					autocapitalize: 'off'
-				},
-				showCancelButton: true,
-				confirmButtonText: 'Look up',
-				showLoaderOnConfirm: true,
-				preConfirm: (login) => {
-					return fetch(`//api.github.com/users/${login}`)
-					.then(response => {
-						if (!response.ok) {
-							throw new Error(response.statusText)
-						}
-						return response.json()
-					})
-					.catch(error => {
-						Swal.showValidationMessage(
-							`Request failed: ${error}`
-							)
-					})
-				},
-				allowOutsideClick: () => !Swal.isLoading()
-			}).then((result) => {
-				if (result.isConfirmed) {
-					Swal.fire({
-						title: `${result.value.login}'s avatar`,
-						imageUrl: result.value.avatar_url
-					})
-				}
-			})
-		}
-		function twelve(){
-			let timerInterval
-			Swal.fire({
-				title: 'Auto close alert!',
-				html: 'I will close in <b></b> milliseconds.',
-				timer: 2000,
-				timerProgressBar: true,
-				didOpen: () => {
-					Swal.showLoading()
-					const b = Swal.getHtmlContainer().querySelector('b')
-					timerInterval = setInterval(() => {
-						b.textContent = Swal.getTimerLeft()
-					}, 100)
-				},
-				willClose: () => {
-					clearInterval(timerInterval)
-				}
-			}).then((result) => {
-				/* Read more about handling dismissals below */
-				if (result.dismiss === Swal.DismissReason.timer) {
-					console.log('I was closed by the timer')
-				}
-			})
-		}
-	</script>
+	<script src="https://www.cssscript.com/demo/animated-customizable-range-slider-pure-javascript-rslider-js/js/rSlider.min.js"></script>
 </body>
 </html>

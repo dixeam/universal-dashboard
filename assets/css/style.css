@@ -28,8 +28,9 @@ body,p,a,ul li,span,h4,h5,label{
 }
 .bg-yellow{
 	background: #FF9A1F;
-	height: 25px;
-	width: 25px;
+	height: 30px;
+	line-height: 30px;
+	width: 30px;
 	border-radius: 100%;
 	font-size: 15px;
 	text-align: center;
@@ -2082,7 +2083,8 @@ img, svg {
 
 
 
-	/*Sweet Alert Started*/	.confirm {
+	/*Sweet Alert Started*/
+	.confirm {
 		display: inline-block !important;
 		font-weight: 400 !important;
 		text-align: center !important;
@@ -2327,3 +2329,143 @@ img, svg {
 	}
 }
 /*Gmail Ended*/
+
+
+
+/*Round Slider Started*/
+#appearance1 .rs-range-color  {
+	background-color: #007AFF;
+}
+#appearance1 .rs-path-color  {
+	background-color: #dedede;
+}
+#appearance1 .rs-handle  {
+	background-color: #000000;
+}
+#appearance1 .rs-border  {
+	border-color: white;
+}#appearance2 .rs-range-color  {
+	background-color: #007AFF;
+}
+#appearance2 .rs-handle:after  {
+	background-color: #000000;
+}
+#appearance2 .rs-border  {
+	border-color: #007AFF;
+}
+#appearance7 .rs-range-color  {
+	background-color: #007AFF;
+}
+#appearance7 .rs-path-color  {
+	background-color: #C2E9F7;
+}
+#appearance7 .rs-handle  {
+	background-color: #C2E9F7;
+	padding: 7px;
+	border: 2px solid #C2E9F7;
+}
+#appearance7 .rs-handle.rs-focus  {
+	border-color: #33B5E5;
+}
+#appearance7 .rs-handle:after  {
+	border-color: #33B5E5;
+	background-color: #33B5E5;
+}
+#appearance7 .rs-border  {
+	border-color: transparent;
+}
+#appearance3 .rs-range-color  {
+	background-color: #5673E7;
+}
+#appearance3 .rs-path-color  {
+	background-color: #dedede;
+}
+#appearance3 .rs-handle  {
+	background-color: #000000;
+}
+#appearance3 .rs-border  {
+	border-color: white;
+}
+#appearance4 .rs-range-color  {
+	background-color: #ff8d00;
+}
+#appearance4 .rs-handle:after  {
+	background-color: #000000;
+}
+#appearance4 .rs-border  {
+	border-color: #ff8d00;
+}
+#appearance8 .rs-range-color  {
+	background-color: #33B5E5;
+}
+#appearance8 .rs-path-color  {
+	background-color: #C2E9F7;
+}
+#appearance8 .rs-handle  {
+	background-color: #C2E9F7;
+	padding: 7px;
+	border: 2px solid #C2E9F7;
+}
+#appearance8 .rs-handle.rs-focus  {
+	border-color: #33B5E5;
+}
+#appearance8 .rs-handle:after  {
+	border-color: #33B5E5;
+	background-color: #33B5E5;
+}
+#appearance8 .rs-border  {
+	border-color: transparent;
+}
+/*Round Slider Ended*/
+
+
+
+/*Advance Started*/
+#fourdate{
+	border-top: 1px solid #ced4da !important;
+	border-bottom: 1px solid #ced4da !important;
+	border-left: 1px solid #ced4da !important;
+	border-right: none;
+	border-radius: 0.25rem 0rem 0rem 0.25rem !important;
+}
+#ret{
+	border-top: 1px solid #ced4da !important;
+	border-bottom: 1px solid #ced4da !important;
+	border-right: 1px solid #ced4da !important;
+	border-left: none;
+	border-radius: 0rem 0.25rem 0.25rem 0rem !important;
+}
+#fourdate:focus{
+	box-shadow: none!important;
+}
+#ret:focus{
+	box-shadow: none!important;
+}
+/*Advance Ended*/
+
+
+/*Remix Icon Started*/
+.icon-demo-content {
+	color: #adb5bd;
+}
+.icon-demo-content i {
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	line-height: 36px;
+	font-size: 22px;
+	color: #74788d;
+	border: 2px solid #f1f5f7;
+	border-radius: 4px;
+	transition: all .4s;
+	text-align: center;
+	margin-right: 16px;
+	vertical-align: middle;
+}
+.icon-demo-content i:hover {
+	background-color: #5664d2 !important;
+	color: white !important;
+}
+/*Remix Icon Ended*/
+
+
